@@ -73,12 +73,15 @@ footer{
  transition: ease-out 1s;
 }
 
+
 #titre{
 	font-family: 'Geostar', cursive;
-	position: relative;
-	margin-top: auto;
-	margin-left: auto;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%,-2.5vh);
 	font-size: 5vh;
+	font-color: white;
 	 z-index: 6;
 
 }
