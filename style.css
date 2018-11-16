@@ -47,6 +47,42 @@ table {
 	border-spacing: 0;
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+body{
+	height: 100vh;
+	width: 100vw;
+
+}
+
+header{
+	background-color: #C6D8FF;
+	height: 50vh;
+	width: 100vw;
+	z-index: 5;
+ 	transition: ease-out 1s;
+}
+
+footer{
+ 	background-color: #223127;
+	height: 50vh;
+ 	width: 100vw;
+	position : absolute;
+	bottom:0;
+
+ z-index: 5;
+ transition: ease-out 1s;
+}
+
+#titre{
+	font-family: 'Geostar', cursive;
+	position: relative;
+	margin-top: auto;
+	margin-left: auto;
+	font-size: 5vh;
+	 z-index: 6;
+
+}
+
 #slider {
     position: relative;
     width: 800px;          /* largeur de la zone d'afichage du diapo */
