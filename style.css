@@ -48,10 +48,17 @@ table {
 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+body, html{height:100%;}
+
 body{
+	text-align: center;
 	height: 100vh;
 	width: 100vw;
+}
 
+#main{
+	min-height:100%;
+	position:relative;
 }
 
 header{
@@ -68,11 +75,9 @@ footer{
  	width: 100vw;
 	position : absolute;
 	bottom:0;
-
- z-index: 5;
- transition: ease-out 1s;
+ 	z-index: 5;
+ 	transition: ease-out 1s;
 }
-
 
 #titre{
 	font-family: 'Geostar', cursive;
@@ -82,24 +87,52 @@ footer{
 	transform: translate(-50%,-2.5vh);
 	font-size: 5vh;
 	font-color: white;
-	 z-index: 6;
+	z-index: 6;
 
 }
 
-#slider {
+#diaporama {
     position: relative;
-    width: 800px;          /* largeur de la zone d'afichage du diapo */
-    height: 400px;         /* hauteur de la zone d'affichage du diapo */
-    margin:  20px auto;    /* 0px du haut et centrage horizontal */
-    overflow: hidden;	   /* cache la partie des images non visibles si trop grandes */
-	text-align:center;		/* permet de centrer les enfants => de centrer les boutons */	
-}
+    overflow: hidden;
+	text-align: center;	
+	height: 0vh;    
+ 	transition: ease-out 1s;
+}	
+
 #contenu {
     position: absolute; 
 	margin:0;
-    top: 0;
-    left: 30px;
-    width: 700px;
-	height: 250px;           
+    top: 0;       
     padding: 0;
 } 
+
+/* boutons avec numeros de diapos */
+ol.numericControls {margin:250px 0 1em 0;padding:0;height:28px;	}
+ol.numericControls li{margin:0 10px 0 0; padding:0;float:left;list-style:none;height:28px;line-height:28px;}
+ol.numericControls li a{float:left;height:28px;line-height:28px;border:1px solid #ccc;background:#DAF3F8;color:#555;padding:0 10px;text-decoration:none;}
+ol.numericControls li.current a{background:#5DC9E1;color:#fff;}
+ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{outline:none;}
+
+/* boutons suivant et précédent */
+.prevBtn, .nextBtn {
+	margin:0;
+	padding:0;
+	display:block;
+	overflow:hidden;
+	text-indent:-8000px;
+	width:30px;
+	height:77px;
+	position:absolute;
+	top:71px;
+	z-index:1000;
+	cursor:pointer;
+}	
+.prevBtn{
+	left: 0px;
+	background: url(images/step-backward.svg) no-repeat 0 0;
+}
+
+.nextBtn{
+	right: 0px;
+	background: url(images/step-forward.svg) no-repeat 0 0;
+}

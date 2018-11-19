@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+        <title>Petcheurs de son</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Geostar" rel="stylesheet">
+        <script src="js/jquery.sudoSlider.min.js"></script>
+    </head>
+
+    <body>
+    	<div id="main">
+	    	<header>
+	    	</header>
+			<div id="diaporama">
+				<div id="contenu">
+				    <div class="slide">
+				    	<img src="bla.jpg"></img>
+				    </div>
+				    <div class="slide">
+				    	<img src="bla.jpg"></img>
+				    </div>
+				    <div class="slide">
+				    	<img src="bla.jpg"></img>
+				    </div>
+				    <div class="slide">
+				    	<img src="bla.jpg"></img>
+				    </div>
+				    <div class="slide">
+				    	<img src="bla.jpg"></img>
+				    </div>
+			 	</div>
+			</div>
+			<p id="titre">Petcheurs de son</p>
+	   		<footer>   	
+	    	</footer>
+    	</div>
+	</body>
+	<script>
+		$().ready(function(){
+
+			let setup = $("#titre").click(function(){
+				$("#diaporama").css("height","80vh");
+				$("header").css("height","10vh");
+				$("footer").css("height","10vh");
+			});
+
+		});
+
+		$(document).ready(function(){
+			let sudoSlider = $("#contenu").sudoSlider({
+				numeric: true
+			});
+		});
+	</script>
+</html>
