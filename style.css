@@ -107,11 +107,21 @@ footer{
 } 
 
 /* boutons avec numeros de diapos */
-ol.numericControls {margin:250px 0 1em 0;padding:0;height:28px;	}
-ol.numericControls li{margin:0 10px 0 0; padding:0;float:left;list-style:none;height:28px;line-height:28px;}
-ol.numericControls li a{float:left;height:28px;line-height:28px;border:1px solid #ccc;background:#DAF3F8;color:#555;padding:0 10px;text-decoration:none;}
-ol.numericControls li.current a{background:#5DC9E1;color:#fff;}
-ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{outline:none;}
+ol.numericControls {
+	margin:250px 0 1em 0;padding:0;height:28px;	
+}
+ol.numericControls li{
+	margin:0 10px 0 0; padding:0;float:left;list-style:none;height:28px;line-height:28px;
+}
+ol.numericControls li a{
+	float:left;height:28px;line-height:28px;border:1px solid #ccc;background:#DAF3F8;color:#555;padding:0 10px;text-decoration:none;
+}
+ol.numericControls li.current a{
+	background:#5DC9E1;color:#fff;
+}
+ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
+	outline:none;
+}
 
 /* boutons suivant et précédent */
 .prevBtn, .nextBtn {
@@ -123,7 +133,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{outline:none;}
 	width:30px;
 	height:77px;
 	position:absolute;
-	top:71px;
+	top:37vh;
 	z-index:1000;
 	cursor:pointer;
 }	
