@@ -79,10 +79,8 @@ footer{
 
 #titre{
 	font-family: 'Geostar', cursive;
-	position: absolute;
+	position: sticky;
 	top: 50vh;
-	left: 50vw;
-	transform: translate(-50%,-2.5vh);
 	font-size: 5vh;
 	font-color: white;
 	z-index: 6;
