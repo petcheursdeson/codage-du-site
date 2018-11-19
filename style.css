@@ -62,7 +62,6 @@ body{
 }
 
 header{
-	background-color: #C6D8FF;
 	height: 50vh;
 	width: 100vw;
 	z-index: 5;
@@ -70,7 +69,6 @@ header{
 }
 
 footer{
- 	background-color: #223127;
 	height: 50vh;
  	width: 100vw;
 	position : absolute;
@@ -97,27 +95,35 @@ footer{
 	text-align: center;	
 	height: 0vh;    
  	transition: ease-out 1s;
-}	
-
-#contenu {
-    position: absolute; 
-	margin:0;
-    top: 0;       
-    padding: 0;
-} 
+}
 
 /* boutons avec numeros de diapos */
 ol.numericControls {
-	margin:250px 0 1em 0;padding:0;height:28px;	
+	margin:250px 0 1em 0;
+	padding:0;
+	height:28px;	
 }
 ol.numericControls li{
-	margin:0 10px 0 0; padding:0;float:left;list-style:none;height:28px;line-height:28px;
+	margin:0 10px 0 0; 
+	padding:0;
+	float:left;
+	list-style:none;
+	height:28px;
+	line-height:28px;
 }
 ol.numericControls li a{
-	float:left;height:28px;line-height:28px;border:1px solid #ccc;background:#DAF3F8;color:#555;padding:0 10px;text-decoration:none;
+	float:left;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+	background:#DAF3F8;
+	color:#555;
+	padding:0 10px;
+	text-decoration:none;
 }
 ol.numericControls li.current a{
-	background:#5DC9E1;color:#fff;
+	background:#5DC9E1;
+	color:#fff;
 }
 ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	outline:none;
@@ -133,16 +139,34 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	width:30px;
 	height:77px;
 	position:absolute;
-	top:37vh;
+	top:40vh;
 	z-index:1000;
 	cursor:pointer;
 }	
 .prevBtn{
 	left: 0px;
-	background: url(images/step-backward.svg) no-repeat 0 0;
+	background: url(images/back.svg) no-repeat 0 0;
 }
 
 .nextBtn{
 	right: 0px;
-	background: url(images/step-forward.svg) no-repeat 0 0;
+	background: url(images/next.svg) no-repeat 0 0;
+}
+.slide {
+	height: 86vh;
+}
+#slide1 {
+	background: #EDD2AB;
+}
+#slide2 {
+	background: #292F3C;
+}
+#slide3 {
+	background: #F2DC5D;
+}
+#slide4 {
+	background: #869767;
+}
+#slide5 {
+	background: #040307;
 }

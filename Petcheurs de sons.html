@@ -15,20 +15,15 @@
 	    	</header>
 			<div id="diaporama">
 				<div id="contenu">
-				    <div class="slide">
-				    	<img src="images/background1.jpg"></img>
+				    <div class="slide" id="slide1">
 				    </div>
-				    <div class="slide">
-				    	<img src="images/background2.jpg"></img>
+				    <div class="slide" id="slide2">
 				    </div>
-				    <div class="slide">
-				    	<img src="images/background3.jpg"></img>
+				    <div class="slide" id="slide3">
 				    </div>
-				    <div class="slide">
-				    	<img src="images/background4.jpg"></img>
+				    <div class="slide" id="slide4">
 				    </div>
-				    <div class="slide">
-				    	<img src="images/background5.jpg"></img>
+				    <div class="slide" id="slide5">
 				    </div>
 			 	</div>
 			</div>
@@ -41,9 +36,9 @@
 		$().ready(function(){
 
 			let setup = $("#titre").click(function(){
-				$("#diaporama").css("height","80vh");
-				$("header").css("height","10vh");
-				$("footer").css("height","10vh");
+				$("#diaporama").css("height","86vh");
+				$("header").css("height","7vh");
+				$("footer").css("height","7vh");
 			});
 
 		});
