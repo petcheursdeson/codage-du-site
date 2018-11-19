@@ -66,6 +66,7 @@ header{
 	width: 100vw;
 	z-index: 5;
  	transition: ease-out 1s;
+ 	transition-delay: 1s;
 }
 
 footer{
@@ -75,6 +76,7 @@ footer{
 	bottom:0;
  	z-index: 5;
  	transition: ease-out 1s;
+ 	transition-delay: 1s;
 }
 
 #titre{
@@ -84,6 +86,14 @@ footer{
 	font-size: 5vh;
 	font-color: white;
 	z-index: 6;
+
+}
+#left{
+	float: left;
+	width: 50vw;
+	transition-duration: 1s;
+}
+#right{
 
 }
 
