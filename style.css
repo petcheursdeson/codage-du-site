@@ -79,8 +79,10 @@ footer{
 
 #titre{
 	font-family: 'Geostar', cursive;
-	position: sticky;
+	position: absolute;
 	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%,-2.5vh);
 	font-size: 5vh;
 	font-color: white;
 	z-index: 6;
@@ -137,7 +139,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	width:30px;
 	height:77px;
 	position:absolute;
-	top:40vh;
+	top:50vh;
 	z-index:1000;
 	cursor:pointer;
 }	
@@ -167,4 +169,9 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 #slide5 {
 	background: #040307;
+}
+#logo {
+	height: 8vh;
+	left: 0;
+	position :absolute;
 }
