@@ -78,7 +78,10 @@ footer{
 }
 
 #titre{
-	font-family: 'Geostar', cursive;
+	font-family: 'Neon Absolute Sans', sans-serif;
+	font-weight: normal;
+    font-style: normal;
+
 	position: absolute;
 	position: sticky;
 	top: 50vh;
@@ -145,11 +148,22 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	left: 0px;
 	background: url(images/back.svg) no-repeat 0 0;
 }
+.prevBtn:hover, .nextBtn:hover{
+	filter: invert(1);
+	transform-origin: center;
+	width:35px;
+	height:82px;
+	transition-duration: 0.25s;
+
+}
 
 .nextBtn{
 	right: 0px;
 	background: url(images/next.svg) no-repeat 0 0;
 }
+
+
+
 .slide {
 	height: 86vh;
 }
