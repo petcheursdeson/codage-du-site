@@ -67,7 +67,10 @@ body{
 	text-align: center;
 	height: 100vh;
 	width: 100vw;
+	overflow: hidden;
 }
+
+iframe { display: none; }
 
 #main{
 	min-height:100%;
@@ -98,9 +101,8 @@ footer{
 	position: absolute;
 	position: sticky;
 	top: 50vh;
-	font-size: 5vh;
+	font-size: 3rem;
 	z-index: 6;
-
 }
 
 #diaporama {
@@ -200,4 +202,76 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	padding: 1vh;
 	left: 0;
 	position :absolute;
+}
+
+
+
+
+.player {
+  cursor: pointer;
+  position: absolute;
+  top: 0; bottom: 0;
+  margin: auto;
+  height: 150px;
+  width: 50%;
+  
+  font-family: Helvetica, Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s linear;
+}
+
+.waveform {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-size: 100% 100%;
+  transition: background-image 1s linear;
+}
+
+.position {
+  opacity: 0.3;
+  position: absolute;
+  height: 100%;
+  width: 0;
+  transition: width .1s linear;
+}
+
+.info {
+  user-select: none;
+  z-index: 5;
+  position: absolute;
+  height: 1em;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 2rem;
+  letter-spacing: -.08em;
+  
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  
+  color: white;
+}
+#playbutton {
+	width: 50px;
+	height: 50px;
+	border: black solid;
+}
+#nextbutton {
+	width: 50px;
+	height: 50px;
+	border: black solid;
+}
+#prevbutton {
+	width: 50px;
+	height: 50px;
+	border: black solid;
 }
