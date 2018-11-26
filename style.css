@@ -225,6 +225,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
   height: 100%;
   width: 0;
   transition: width .1s linear;
+  background-color: black;
 }
 
 .info {
@@ -251,14 +252,17 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	width: 50px;
 	height: 50px;
 	border: black solid;
+	background: url(images/play-button.svg) no-repeat 0 0;
 }
 #nextbutton {
 	width: 50px;
 	height: 50px;
 	border: black solid;
+	background: url(images/fast-forward.svg) no-repeat 0 0;
 }
 #prevbutton {
 	width: 50px;
 	height: 50px;
 	border: black solid;
+	background: url(images/fast-backward.svg) no-repeat 0 0;
 }
