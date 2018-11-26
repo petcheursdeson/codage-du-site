@@ -81,10 +81,9 @@ footer{
 }
 
 #titre{
-	font-family: 'Neon Absolute Sans', sans-serif;
-	font-weight: normal;
+	font-family: 'Coves';
+	font-weight: bold;
     font-style: normal;
-
 	position: absolute;
 	position: sticky;
 	top: 50vh;
@@ -164,8 +163,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	background: url(images/next.svg) no-repeat 0 0;
 }
 
-
-
 .slide {
 	height: 86vh;
 }
@@ -191,18 +188,14 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	position :absolute;
 }
 
-
-
-
 .player {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   top: 0; bottom: 0;
   margin: auto;
   height: 150px;
   width: 50%;
-  
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Coves;
   background-size: cover;
   background-position: center;
   transition: background-image 1s linear;
@@ -239,30 +232,47 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
   margin: auto;
   font-size: 2rem;
   letter-spacing: -.08em;
-  
   display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-  
   color: white;
 }
 #playbutton {
-	width: 50px;
-	height: 50px;
-	border: black solid;
 	background: url(images/play-button.svg) no-repeat 0 0;
 }
 #nextbutton {
-	width: 50px;
-	height: 50px;
-	border: black solid;
 	background: url(images/fast-forward.svg) no-repeat 0 0;
 }
 #prevbutton {
+	background: url(images/fast-backward.svg) no-repeat 0 0;
+}
+#playbutton, #prevbutton, #nextbutton {
 	width: 50px;
 	height: 50px;
 	border: black solid;
-	background: url(images/fast-backward.svg) no-repeat 0 0;
+}
+
+#playbutton:hover, #prevbutton:hover, #nextbutton:hover {
+	cursor: pointer;
+	filter: invert(1);
+	transform-origin: center;
+	width:55px;
+	height:55px;
+	transition-duration: 0.25s;
+}
+@font-face {
+	font-family: "Coves";
+	font-weight: bold;
+	src: url('css/fonts/Coves Bold.otf');
+}
+@font-face {
+	font-family: "Coves";
+	font-weight: normal;
+	src: url('css/fonts/Coves Light.otf');
+}
+.intitule {
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
 }

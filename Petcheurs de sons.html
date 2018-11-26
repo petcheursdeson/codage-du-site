@@ -4,8 +4,9 @@
 		<meta charset="UTF-8">
         <title>Petcheurs de son</title>
         <link rel="stylesheet" href="style.css">
+		<script src="css/fonts/Coves Bold.otf"></script>
+		<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Geostar" rel="stylesheet">
         <script src="js/jquery.sudoSlider.min.js"></script>
 		<script src='https://w.soundcloud.com/player/api.js'></script>
     </head>
@@ -14,11 +15,12 @@
     	<div id="main">
 	    	<header>
 				<img id="logo" src="images/Petcheurs de son.svg" alt="logo">
-				<p id="titre">Petcheurs de son</p>
+				<h1 id="titre">Petcheurs de son</h1>
 	    	</header>
 			<div id="diaporama">
 				<div id="contenu">
 				    <div class="slide" id="slide1">
+						<h2 class="intitule">Chill</h2>
 						<div class="player">
 							<span class='info'></span>
 							<div class="waveform"></div>
@@ -79,7 +81,7 @@
 			$('.position').css('width', ( e.relativePosition*100)+"%");
 		  });
 		  
-		   $('.player').mousemove(function(e){ //Get position of mouse for scrubbing
+		  $('.player').mousemove(function(e){ //Get position of mouse for scrubbing
 			scrub = (e.pageX-pOffset.left);
 		  });
 		  
@@ -87,10 +89,12 @@
 				player.toggle(); 
 		  });
 		  $("#nextbutton").click(function(){
-				player.next(); 
+				player.next();
+				setInfo();				
 		  });
 		  $("#prevbutton").click(function(){
 				player.prev(); 
+				setInfo();
 		  });
 
 		  $('.player').click(function(){ //Use the position to seek when clicked
