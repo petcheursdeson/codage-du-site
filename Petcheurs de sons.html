@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html>
     <head>
 		<meta charset="UTF-8">
@@ -24,6 +24,9 @@
 							<div class="waveform"></div>
 							<div class="position"></div>  
 						</div>
+						<div id="playbutton"></div>
+						<div id="nextbutton"></div>
+						<div id="prevbutton"></div>
 					<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 				    </div>
 				    <div class="slide" id="slide2">
@@ -80,18 +83,14 @@
 			scrub = (e.pageX-pOffset.left);
 		  });
 		  
-		  $(document).on('keydown', function(e){
-			switch(e.keyCode){
-			  case 32:
+		  $("#playbutton").click(function(){
 				player.toggle(); 
-			  break;
-			  case 39:
-				player.next();
-			  break;
-			  case 37:
-				player.prev();
-			  break;
-			}
+		  });
+		  $("#nextbutton").click(function(){
+				player.next(); 
+		  });
+		  $("#prevbutton").click(function(){
+				player.prev(); 
 		  });
 
 		  $('.player').click(function(){ //Use the position to seek when clicked
