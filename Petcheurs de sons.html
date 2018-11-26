@@ -12,27 +12,29 @@
     <body>
     	<div id="main">
 	    	<header>
+				<img id="logo" src="images/Petcheurs de son.svg" alt="logo">
+				<p id="titre">Petcheurs de son</p>
 	    	</header>
 			<div id="diaporama">
 				<div id="contenu">
-				    <div class="slide">
-				    	<img src="bla.jpg"></img>
+				    <div class="slide" id="slide1">
 				    </div>
-				    <div class="slide">
-				    	<img src="bla.jpg"></img>
+				    <div class="slide" id="slide2">
+				    	<p></p>
+
 				    </div>
-				    <div class="slide">
-				    	<img src="bla.jpg"></img>
+				    <div class="slide" id="slide3">
+				    	<p></p>
 				    </div>
-				    <div class="slide">
-				    	<img src="bla.jpg"></img>
+				    <div class="slide" id="slide4">
+				    	<p></p>
 				    </div>
-				    <div class="slide">
-				    	<img src="bla.jpg"></img>
+				    <div class="slide" id="slide5">
+				    	<p></p>
 				    </div>
 			 	</div>
 			</div>
-			<p id="titre">Petcheurs de son</p>
+			
 	   		<footer>   	
 	    	</footer>
     	</div>
@@ -41,9 +43,9 @@
 		$().ready(function(){
 
 			let setup = $("#titre").click(function(){
-				$("#diaporama").css("height","80vh");
-				$("header").css("height","10vh");
-				$("footer").css("height","10vh");
+				$("#diaporama").css("height","86vh");
+				$("header").css("height","7vh");
+				$("footer").css("height","7vh");
 			});
 
 		});
