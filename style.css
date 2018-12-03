@@ -264,7 +264,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 #playbutton, #prevbutton, #nextbutton {
 	width: 50px;
 	height: 50px;
-	border: black solid;
+	display: inline-block;
 }
 
 #playbutton:hover, #prevbutton:hover, #nextbutton:hover {
