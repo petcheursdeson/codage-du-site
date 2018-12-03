@@ -67,10 +67,7 @@
 				$("header").css("height","7vh");
 				$("footer").css("height","7vh");
 			});
-
-		});
-
-		$(document).ready(function(){
+			
 			let sudoSlider = $("#contenu").sudoSlider({
 				numeric: true
 			});
@@ -79,6 +76,10 @@
 		  var pOffset = $('.player').offset();
 		  var pWidth = $('.player').width();
 		  var scrub;
+		  
+		  let reload = $(".controls").click(function(){
+			$("#slide1").remove(".sc-widget");
+			});
 		  
 		  player.bind(SC.Widget.Events.READY, function() {
 			setInfo();
@@ -107,10 +108,26 @@
 		  });
 		  $("#nextbutton").click(function(){
 				player.next();
+				player.pause(); 
+				player.isPaused(function(pause){
+					if (pause) {
+						$("#playbutton").css("background","url(images/play-button.svg)","no-repeat","0","0");
+					} else {
+						$("#playbutton").css("background","url(images/pause.svg)","no-repeat","0","0");
+					}
+				});
 				setInfo();				
 		  });
 		  $("#prevbutton").click(function(){
 				player.prev(); 
+				player.pause(); 
+				player.isPaused(function(pause){
+					if (pause) {
+						$("#playbutton").css("background","url(images/play-button.svg)","no-repeat","0","0");
+					} else {
+						$("#playbutton").css("background","url(images/pause.svg)","no-repeat","0","0");
+					}
+				});
 				setInfo();
 		  });
 

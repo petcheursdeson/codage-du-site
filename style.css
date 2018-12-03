@@ -271,8 +271,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	cursor: pointer;
 	filter: invert(1);
 	transform-origin: center;
-	width:55px;
-	height:55px;
 	transition-duration: 0.25s;
 }
 @font-face {
