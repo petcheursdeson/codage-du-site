@@ -29,7 +29,7 @@
 							<div class="waveform"></div>
 							<div class="position"></div>  
 						</div>
-						<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+						<iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 				    </div>
 				    <div class="slide" id="slide2">
 				    <h2 class="intitule">Chill</h2>
@@ -41,7 +41,7 @@
 							<div class="waveform"></div>
 							<div class="position"></div>  
 						</div>
-						<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+						<iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 				    </div>
 				    <div class="slide" id="slide3">
 				    	<p></p>
@@ -77,9 +77,23 @@
 		  var pWidth = $('.player').width();
 		  var scrub;
 		  
-		  let reload = $(".controls").click(function(){
-			$("#slide1").remove(".sc-widget");
-			});
+		  $(".controls").click(function(){		  
+			$(".sc-widget").remove();
+			var currentSlide = sudoSlider.getValue('currentSlide')
+			switch (currentSlide) {
+			case 1:
+				$("#list" + currentSlide).html('<iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+			break;
+			case 2:
+				$("#list" + currentSlide).html('<iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+			break;
+			case 3:
+				$("#list" + currentSlide).html('<iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+			break;
+			default:
+				$("#list" + currentSlide).html('<iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+			}
+		  });
 		  
 		  player.bind(SC.Widget.Events.READY, function() {
 			setInfo();
