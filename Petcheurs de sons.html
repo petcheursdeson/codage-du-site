@@ -29,11 +29,19 @@
 							<div class="waveform"></div>
 							<div class="position"></div>  
 						</div>
-					<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+						<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 				    </div>
 				    <div class="slide" id="slide2">
-				    	<p></p>
-
+				    <h2 class="intitule">Chill</h2>
+						<div id="prevbutton"></div>
+						<div id="playbutton"></div>
+						<div id="nextbutton"></div>
+						<div class="player">
+							<span class='info'></span>
+							<div class="waveform"></div>
+							<div class="position"></div>  
+						</div>
+						<iframe class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
 				    </div>
 				    <div class="slide" id="slide3">
 				    	<p></p>
@@ -66,9 +74,6 @@
 			let sudoSlider = $("#contenu").sudoSlider({
 				numeric: true
 			});
-		});
-		
-		$(document).ready(function(){
   
 		  var player = SC.Widget($('iframe.sc-widget')[0]);
 		  var pOffset = $('.player').offset();
@@ -91,6 +96,13 @@
 		  });
 		  
 		  $("#playbutton").click(function(){
+				player.isPaused(function(pause){
+					if (pause) {
+						$("#playbutton").css("background","url(images/pause.svg)","no-repeat","0","0");
+					} else {
+						$("#playbutton").css("background","url(images/play-button.svg)","no-repeat","0","0");
+					}
+				});
 				player.toggle(); 
 		  });
 		  $("#nextbutton").click(function(){
@@ -127,8 +139,6 @@
 						.replace('wis', 'w1');
 				
 				var artworkUrl = song.artwork_url || '';
-				
-			   console.log(song);
 			  
 			  $('.waveform').css('background-image', "url('" + waveformPng + "')");    
 			  $('.player').css('background-image', "url('" + artworkUrl.replace('-large', '-t500x500') + "')");
