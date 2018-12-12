@@ -72,38 +72,27 @@
 				case 1:
 					$("#slide" + currentSlide).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
 					player = SC.Widget($('iframe#list' + currentSlide)[0]);
-					player.bind(SC.Widget.Events.READY, function() {
-						setInfo();
-						player.play();
-					}); //Set info on load
+					setupPlayer();
 				break;
 				case 2:
 					$("#slide" + currentSlide).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
 					player = SC.Widget($('iframe#list' + currentSlide)[0]);
-					player.bind(SC.Widget.Events.READY, function() {
-						setInfo();
-						player.play();
-					}); //Set info on load
+					setupPlayer();
 				break;
 				case 3:
 					$("#slide" + currentSlide).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list3" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
 					player = SC.Widget($('iframe#list' + currentSlide)[0]);
-					player.bind(SC.Widget.Events.READY, function() {
-						setInfo();
-						player.play();
-					}); //Set info on load
+					setupPlayer();
 				break;
 				default:
 					$("#slide" + currentSlide).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list4" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
 					player = SC.Widget($('iframe#list' + currentSlide)[0]);
-					player.bind(SC.Widget.Events.READY, function() {
-						setInfo();
-						player.play();
-					}); //Set info on load
+					setupPlayer();
 				}
 			});
 		  });
-  
+  		
+  		function setupPlayer(){
 		  var pOffset = $('.player').offset();
 		  var pWidth = $('.player').width();
 		  var scrub;
@@ -172,6 +161,7 @@
 			}
 			
 		  });
+		}
 		  
 		   function setInfo() {
 			player.getCurrentSound(function(song) {
@@ -199,9 +189,8 @@
 
 			player.isPaused(function(bool){
 			  player.getPaused = bool;
-			});
-		  }   
-		  
+			}); 
+		 }
 		});
 	</script>
 </html>
