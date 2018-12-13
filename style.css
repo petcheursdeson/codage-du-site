@@ -284,13 +284,12 @@ top: 33vh; bottom: 0;
 	filter : grayscale(50%);
 }
 
-.btn-contain {
-	margin: 5% auto;
-	min-height: 100px;
+.playbutton, .nextbutton, .prevbutton {
+	width: 20%;
+	display: inline-block;
 }
 .btn-underline-contain {
 	max-width: 270px;
-	margin: 0 auto;
 }
 .btn-underline {
 	font-family:sans-serif;
@@ -384,7 +383,6 @@ top: 33vh; bottom: 0;
 }
 .btn-shiny-contain {
 	max-width: 270px;
-	margin: 0 auto;
 }
 .btn-shiny {
 	font-family:sans-serif;
@@ -438,7 +436,6 @@ top: 33vh; bottom: 0;
 .btn-outline-contain {
 	text-align: center;
 	max-width: 270px;
-	margin: 0 auto;
 }
 .btn-outline {
 	font-family:sans-serif;
