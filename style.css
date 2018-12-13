@@ -46,7 +46,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 @font-face {
 	font-family: "Coves";
 	font-weight: bold;
@@ -104,6 +104,7 @@ footer{
 	top: 50vh;
 	font-size: 3rem;
 	z-index: 6;
+	cursor: pointer;
 }
 
 #diaporama {
@@ -159,6 +160,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	top:41vh;
 	z-index:1000;
 	cursor:pointer;
+
 }	
 .prevBtn{
 	left: 0px;
@@ -182,13 +184,13 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	height: 86vh;
 }
 #slide1 {
-	background: #EDD2AB;
+	background: #efd1d5;
 }
 #slide2 {
 	background: #292F3C;
 }
 #slide3 {
-	background: #869767;
+	background: #b1b695;
 }
 #slide4 {
 	background: #040307;
@@ -251,29 +253,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
   text-align: center;
   color: white;
 }
-.playbutton {
-	background: url(images/play-button.svg) no-repeat 0 0;
-}
-.nextbutton {
-	background: url(images/fast-forward.svg) no-repeat 0 0;
-}
-.prevbutton {
-	background: url(images/fast-backward.svg) no-repeat 0 0;
-}
-.playbutton, .prevbutton, .nextbutton {
-	top : 25vh;
-	width: 50px;
-	height: 50px;
-	display: inline-block;
-
-}
-
-.playbutton:hover, .prevbutton:hover, .nextbutton:hover {
-	cursor: pointer;
-	filter: invert(1);
-	transform-origin: center;
-	transition-duration: 0.25s;
-}
 
 .intitule {
 	font-family: 'Shadows Into Light', cursive;
@@ -305,3 +284,251 @@ top: 33vh; bottom: 0;
 	filter : grayscale(50%);
 }
 
+.btn-contain {
+	margin: 5% auto;
+	min-height: 100px;
+}
+.btn-underline-contain {
+	max-width: 270px;
+	margin: 0 auto;
+}
+.btn-underline {
+	font-family:sans-serif;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	margin: 10px;
+	padding: 20px;
+	border: 2px solid white;
+	transition: .3s;
+	display:block;
+	position:relative;
+}
+.btn-underline:after {
+	position: absolute;
+	transition: .3s;
+	content: '';
+	width: 0;
+	bottom: 0;
+	height: 3px;
+	background: white;
+	left: 0;
+}
+.btn-underline:hover:after {
+	width: 100%;
+	left: 0;
+	background: #ff7d52;
+}
+.btn-underline:hover {
+	border: 2px solid #ffac91;
+	-moz-border-image: -moz-linear-gradient(top , #ffac91 0%, #ff7d52 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #ffac91 0%, #ff7d52 100%);
+	border-image: linear-gradient(to bottom, #ffac91 0%, #ff7d52 100%);
+	border-image-slice: 1;
+}
+.btn-underline span {
+	font-weight: bold;
+}
+.btn-underline:hover span {
+	color: #ff7d52;
+}
+.btn-diagonal-contain {
+	max-width: 160px;
+	text-decoration:none;
+}
+.btn-diagonal {
+	outline: none;
+	cursor: pointer;
+	max-width: 270px;
+	min-height: 50px;
+	background: transparent;
+	border: 3px solid rgba(255,255,255,0.5);
+	-webkit-transform: skew(-25deg);
+	transform: skew(-25deg);
+	margin: 10px auto;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.btn-diagonal-contain:hover .btn-diagonal {
+	-webkit-transform: skew(0deg);
+	-moz-transform: skew(0deg);
+	-o-transform: skew(0deg);
+	-ms-transform: skew(0deg);
+	transform: skew(0deg);
+	border: 3px solid white;
+}
+.btn-diagonal-inner {
+	font-family:sans-serif;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	top: 50px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.5);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.btn-diagonal-contain:hover  .btn-diagonal-inner {
+	color: rgba(255,255,255,1);
+}
+.btn-shiny-contain {
+	max-width: 270px;
+	margin: 0 auto;
+}
+.btn-shiny {
+	font-family:sans-serif;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	border: none;
+	padding: 20px;
+	display: block;
+	margin: 50px auto;
+	background: #928621;
+	position: relative;
+	border: 2px solid #887c19;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	overflow: hidden;
+	color: #635a0e;
+}
+.btn-shiny .shiny-line {
+	background-color: #fff3b2;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	left: -185px; /* May need to change this depending on length of button */
+	transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	-o-transform: rotateZ(45deg);
+	-ms-transform: rotateZ(45deg);
+}
+.btn-shiny:hover {
+	background: #e8c600;
+	border: 2px solid #887c19;
+	color: #a28a00;
+}
+.btn-shiny:hover .shiny-line {
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	left: 185px; /* May need to change this depending on length of button */
+}
+.btn-outline-contain {
+	text-align: center;
+	max-width: 270px;
+	margin: 0 auto;
+}
+.btn-outline {
+	font-family:sans-serif;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	border: 1px solid rgba(255, 235, 59, 0.5);
+	color: rgba(255, 235, 59, 0.5);
+	text-decoration: none;
+	padding: 20px;
+	display: block;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.btn-outline:hover .btn-outline-inner {
+	font-weight:bold;
+	color: #fff59d;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.btn-outline:hover .line-1 {animation: outline1 2s infinite ease-in-out;}
+.btn-outline:hover .line-2 {animation: outline2 2s infinite ease-in-out;}
+.btn-outline:hover .line-3 {animation: outline3 2s infinite ease-in-out;}
+.btn-outline:hover .line-4 {animation: outline4 2s infinite ease-in-out;}
+.line-1 {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 2px;
+	background-color: #fff59d;
+	left: 0;
+	bottom: 0;
+}
+.line-2 {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 2px;
+	background-color: #fff59d;
+	left: 0;
+	top: 0;
+}
+.line-3 {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 2px;
+	background-color: #fff59d;
+	right: 0;
+	top: 0;
+}
+.line-4 {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 2px;
+	background-color: #fff59d;
+	right: 0;
+	top: 57px;
+}
+@keyframes outline1 {
+	0% {height: 100%; bottom: 0;}
+	54% {height: 0; bottom: 100%;}
+	55% {height: 0; bottom: 0;}
+	100% {height: 100%; bottom: 0;}
+}
+@keyframes outline2 {
+	0% {width: 0;left: 0;}
+	50% {width: 100%; left: 0;}
+	100% {width: 0; left: 100%;}
+}
+
+@keyframes outline3 {
+	0% {height: 100%; top: 0;}
+	54% {height: 0; top: 100%;}
+	55% {height: 0; top: 0;}
+	100% {height: 100%; top: 0;}
+}
+
+@keyframes outline4 {
+	0% { width: 0; right: 0;}
+	55% {width: 100%; right: 0;}
+	100% {width: 0; right: 100%;}
+}
