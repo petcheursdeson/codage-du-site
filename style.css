@@ -270,25 +270,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	display: inline-block;
 }
 
- #slide2 .button{
-	position:absolute;
-	margin-top: 20vh;
-	margin-left: 15vw;
-	width : 70%;
-
- }
- #slide2 .prevbutton{
-	float: left;
-}
-#slide2 .playbutton{
-	background-position: center;
-}
-#slide2 .nextbutton{
-	float: right;
-}
-
-
-
 .btn-underline-contain {
 	max-width: 270px;
 }
@@ -360,6 +341,35 @@ top: 33vh; bottom: 0;
 
 #slide2 .waveform{
 	filter : grayscale(50%);
+}
+
+ #slide2 .button{
+	position:absolute;
+	margin-top: 20vh;
+	margin-left: 15vw;
+	width : 70%;
+
+ }
+ #slide2 .prevbutton{
+	float: left;
+}
+#slide2 .playbutton{
+	background-position: center;
+}
+#slide2 .nextbutton{
+	float: right;
+}
+
+#slide2>.flavortext{
+font-family: 'Coves';
+font-weight: normal;
+font-style: normal;
+ text-align: justify;
+ width: 40%;
+ position: absolute;
+ margin-left: 15vw;
+ margin-top: 50vh;
+ color: #01fdf6;
 }
 
 .btn-shiny-contain {
