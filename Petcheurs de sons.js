@@ -13,7 +13,7 @@ $().ready(function(){
     $(".nextBtn, .prevBtn, #titre").click(function(){
         sudoSlider.runWhenNotAnimating(function () {
             var currentSlide = sudoSlider.getValue('currentSlide')
-            $(".player").remove();
+			$(".player, iframe").remove();
             switch (currentSlide) {
                 case 1:
                     $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
@@ -36,9 +36,7 @@ $().ready(function(){
                     setupPlayer();
             }
         });
-    });
-    $(".nextBtn, .prevBtn").click(function(){
-        player.pause();
+		player.pause();
     });
 
     function setupPlayer(){
