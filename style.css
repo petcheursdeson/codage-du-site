@@ -288,6 +288,26 @@ top: 33vh; bottom: 0;
 	width: 20%;
 	display: inline-block;
 }
+
+ #slide2 .button{
+	position:absolute;
+	margin-top: 20vh;
+	margin-left: 15vw;
+	width : 70%;
+
+ }
+ #slide2 .prevbutton{
+	float: left;
+}
+#slide2 .playbutton{
+	background-position: center;
+}
+#slide2 .nextbutton{
+	float: right;
+}
+
+
+
 .btn-underline-contain {
 	max-width: 270px;
 }
@@ -397,16 +417,16 @@ top: 33vh; bottom: 0;
 	padding: 20px;
 	display: block;
 	margin: 50px auto;
-	background: #928621;
+	background: #01FDF6;
 	position: relative;
-	border: 2px solid #887c19;
+	border: 2px solid #007D7A;
 	transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
 	overflow: hidden;
-	color: #635a0e;
+	color: #267D7B;
 }
 .btn-shiny .shiny-line {
 	background-color: #fff3b2;
@@ -421,9 +441,9 @@ top: 33vh; bottom: 0;
 	-ms-transform: rotateZ(45deg);
 }
 .btn-shiny:hover {
-	background: #e8c600;
-	border: 2px solid #887c19;
-	color: #a28a00;
+	background: #4DFDF8;
+	border: 2px solid #007D7A;
+	color: #267D7B;
 }
 .btn-shiny:hover .shiny-line {
 	transition: all 0.3s ease;
@@ -432,6 +452,9 @@ top: 33vh; bottom: 0;
 	-o-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	left: 185px; /* May need to change this depending on length of button */
+}
+.btn-shiny:active{
+	background: #01FDF6;
 }
 .btn-outline-contain {
 	text-align: center;
