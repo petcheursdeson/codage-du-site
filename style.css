@@ -277,6 +277,10 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	display: inline-block;
 }
 
+#slide1>.lecteur>.player>.waveform {
+	filter: sepia(1) hue-rotate(290deg) saturate(1000%) brightness(94%);
+}
+
 .btn-underline-contain {
 	max-width: 270px;
 }
@@ -378,6 +382,10 @@ top: 33vh; bottom: 0;
  margin-left: 15vw;
  margin-top: 52vh;
  color: #01fdf6;
+}
+
+#slide2>.lecteur>.player>.waveform {
+	filter: brightness(16%) sepia(1) hue-rotate(170deg);
 }
 
 .btn-shiny-contain {
