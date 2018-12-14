@@ -172,7 +172,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	width:35px;
 	height:82px;
 	transition-duration: 0.25s;
-
 }
 
 .nextBtn{
@@ -202,6 +201,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	position :absolute;
 }
 
+/* player */
 .player {
   cursor: pointer;
   position: relative;
@@ -254,38 +254,19 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
   color: white;
 }
 
-.intitule {
+/* slide numéro 1*/
+#slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
-	font-size: 2em;
-}
-
-/* slide numéro 2*/
-@keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01fdf6, 0 0 35px #01fdf6, 0 0 40px #01fdf6, 0 0 50px #01fdf6, 0 0 75px #01fdf6;
-  }
-}
-
-#slide2 .intitule {
-	font-family: 'Neon Absolute Sans';
-	animation: neon 1.5s ease-in-out infinite alternate;
-	color: #ffffff;
 	font-size: 3em;
+    padding: 0.5em;
 	margin-top: 2vh;
 }
-#slide2 .player{
-top: 33vh; bottom: 0;
-}
-
-#slider2 .waveform{
-	filter : grayscale(50%);
-}
-
-.playbutton, .nextbutton, .prevbutton {
-	width: 20%;
+#slide1>.flavortext {
+	font-family: 'Coves';
+	font-weight: normal;
+    font-style: normal;
+	position: absolute;
+	font-size: 1.5em;
 	display: inline-block;
 }
 .btn-underline-contain {
@@ -335,52 +316,32 @@ top: 33vh; bottom: 0;
 .btn-underline:hover span {
 	color: #ff7d52;
 }
-.btn-diagonal-contain {
-	max-width: 160px;
-	text-decoration:none;
+
+/* slide numéro 2*/
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01fdf6, 0 0 35px #01fdf6, 0 0 40px #01fdf6, 0 0 50px #01fdf6, 0 0 75px #01fdf6;
+  }
 }
-.btn-diagonal {
-	outline: none;
-	cursor: pointer;
-	max-width: 270px;
-	min-height: 50px;
-	background: transparent;
-	border: 3px solid rgba(255,255,255,0.5);
-	-webkit-transform: skew(-25deg);
-	transform: skew(-25deg);
-	margin: 10px auto;
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+
+#slide2 .intitule {
+	font-family: 'Neon Absolute Sans';
+	animation: neon 1.5s ease-in-out infinite alternate;
+	color: #ffffff;
+	font-size: 3em;
+	margin-top: 2vh;
 }
-.btn-diagonal-contain:hover .btn-diagonal {
-	-webkit-transform: skew(0deg);
-	-moz-transform: skew(0deg);
-	-o-transform: skew(0deg);
-	-ms-transform: skew(0deg);
-	transform: skew(0deg);
-	border: 3px solid white;
+#slide2 .player{
+top: 33vh; bottom: 0;
 }
-.btn-diagonal-inner {
-	font-family:sans-serif;
-	font-weight:bold;
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-	position: relative;
-	top: 50px;
-	font-weight: bold;
-	color: rgba(255,255,255,0.5);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+
+#slide2 .waveform{
+	filter : grayscale(50%);
 }
-.btn-diagonal-contain:hover  .btn-diagonal-inner {
-	color: rgba(255,255,255,1);
-}
+
 .btn-shiny-contain {
 	max-width: 270px;
 }
@@ -432,6 +393,59 @@ top: 33vh; bottom: 0;
 	-o-transition: all 0.3s ease;
 	-ms-transition: all 0.3s ease;
 	left: 185px; /* May need to change this depending on length of button */
+}
+
+/* boutons */
+.playbutton, .nextbutton, .prevbutton {
+	width: 20%;
+	display: inline-block;
+}
+
+.btn-diagonal-contain {
+	max-width: 160px;
+	text-decoration:none;
+}
+.btn-diagonal {
+	outline: none;
+	cursor: pointer;
+	max-width: 270px;
+	min-height: 50px;
+	background: transparent;
+	border: 3px solid rgba(255,255,255,0.5);
+	-webkit-transform: skew(-25deg);
+	transform: skew(-25deg);
+	margin: 10px auto;
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.btn-diagonal-contain:hover .btn-diagonal {
+	-webkit-transform: skew(0deg);
+	-moz-transform: skew(0deg);
+	-o-transform: skew(0deg);
+	-ms-transform: skew(0deg);
+	transform: skew(0deg);
+	border: 3px solid white;
+}
+.btn-diagonal-inner {
+	font-family:sans-serif;
+	font-weight:bold;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+	top: 50px;
+	font-weight: bold;
+	color: rgba(255,255,255,0.5);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.btn-diagonal-contain:hover  .btn-diagonal-inner {
+	color: rgba(255,255,255,1);
 }
 .btn-outline-contain {
 	text-align: center;
