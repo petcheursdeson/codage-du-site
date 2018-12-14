@@ -340,11 +340,11 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	margin-top: 2vh;
 }
 #slide2 .player{
-top: 33vh; bottom: 0;
+top: 35vh; bottom: 0;
 }
 
 #slide2 .waveform{
-	filter : grayscale(50%);
+	filter : grayscale(75%);
 }
 
  #slide2 .button{
@@ -373,7 +373,7 @@ top: 33vh; bottom: 0;
  width: 55%;
  position: absolute;
  margin-left: 15vw;
- margin-top: 52vh;
+ margin-top: 55vh;
  color: #01fdf6;
 }
 
@@ -441,7 +441,9 @@ top: 33vh; bottom: 0;
 	margin-top: 2vh;
 }
 #slide3 .player{
-top: 45vh; bottom: 0;
+top: 50vh; bottom: 0;
+width: 50vw;
+z-index: 3;
 }
 
 #slide3 .waveform{
@@ -449,9 +451,10 @@ top: 45vh; bottom: 0;
 }
 #slide3 .button{
 	position:absolute;
-	margin-top: 33vh;
-	margin-left: 17vw;
-	width: 65%;
+	margin-top: 37vh;
+	margin-left: 25vw;
+	width: 50%;
+	z-index: 3;
  }
  #slide3 .prevbutton{
 	float: left;
@@ -463,7 +466,32 @@ top: 45vh; bottom: 0;
 	float: right;
 }
 
-#slide3 img{
+#slide3 #img{
+	width: 100vw;
+	height: 100vh;
+	padding-top: 20vh;
+	position :absolute;
+	z-index:1;
+}
+#towerLeft{
+	width : 25vw;
+	float: left;
+}
+#towerRight{
+	width: 25vw;
+	float: right;
+	transform: scaleX(-1);
+}
+#slide3>.flavortext{
+ font-family: 'Coves';
+ font-weight: normal;
+ font-style: normal;
+ font-size : 1.4em;
+ text-align: justify;
+ width: 50%;
+ position: absolute;
+ margin-left: 25vw;
+ margin-top: 20vh;
 }
 /* boutons */
 .playbutton, .nextbutton, .prevbutton {
