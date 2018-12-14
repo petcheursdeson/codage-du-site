@@ -82,7 +82,9 @@ iframe { display: none; }
 	min-height:100%;
 	position:relative;
 }
-
+header, footer {
+	background : black
+}
 header{
 	height: 50vh;
 	width: 100vw;
@@ -109,6 +111,7 @@ footer{
 	font-size: 3rem;
 	z-index: 6;
 	cursor: pointer;
+	color: white;
 }
 
 #diaporama {
@@ -274,6 +277,10 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	display: inline-block;
 }
 
+#slide1>.lecteur>.player>.waveform {
+	filter: sepia(1) hue-rotate(290deg) saturate(1000%) brightness(94%);
+}
+
 .btn-underline-contain {
 	max-width: 270px;
 }
@@ -375,6 +382,10 @@ top: 35vh; bottom: 0;
  margin-left: 15vw;
  margin-top: 55vh;
  color: #01fdf6;
+}
+
+#slide2>.lecteur>.player>.waveform {
+	filter: brightness(16%) sepia(1) hue-rotate(170deg);
 }
 
 .btn-shiny-contain {
