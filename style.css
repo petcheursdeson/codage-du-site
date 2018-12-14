@@ -389,9 +389,6 @@ top: 33vh; bottom: 0;
 	overflow: hidden;
 	color: #267D7B;
 }
-.btn-shiny:active{
-	background: #01FDF6;
-}
 .btn-shiny .shiny-line {
 	background-color: #fff3b2;
 	width: 100%;
@@ -417,7 +414,9 @@ top: 33vh; bottom: 0;
 	-ms-transition: all 0.3s ease;
 	left: 185px; /* May need to change this depending on length of button */
 }
-
+.btn-shiny:active{
+	background: #01FDF6;
+}
 /* boutons */
 .playbutton, .nextbutton, .prevbutton {
 	width: 20%;
