@@ -83,7 +83,7 @@ iframe { display: none; }
 	position:relative;
 }
 header, footer {
-	background : black
+	background : #040307;
 }
 header{
 	height: 50vh;
@@ -265,8 +265,28 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
-    padding: 0.5em;
 	margin-top: 2vh;
+}
+#slide1 .player{
+    top: 50vh;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
+}
+#slide1 .button{
+    position:absolute;
+    margin-top: 37vh;
+    margin-left: 25vw;
+    width: 50%;
+}
+#slide3 .prevbutton{
+    float: left;
+}
+#slide3 .playbutton{
+    float: left;
+}
+#slide3 .nextbutton{
+    float: left;
 }
 #slide1>.flavortext {
 	font-family: 'Coves';
@@ -275,10 +295,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	position: absolute;
 	font-size: 1.5em;
 	display: inline-block;
-}
-
-#slide1>.lecteur>.player>.waveform {
-	filter: sepia(1) hue-rotate(290deg) saturate(1000%) brightness(94%);
 }
 
 .btn-underline-contain {
@@ -347,21 +363,18 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	margin-top: 2vh;
 }
 #slide2 .player{
-top: 35vh; bottom: 0;
+    top: 35vh;
+    bottom: 0;
 }
 
-#slide2 .waveform{
-	filter : grayscale(75%);
-}
-
- #slide2 .button{
+#slide2 .button{
 	position:absolute;
 	margin-top: 20vh;
 	margin-left: 15vw;
 	width : 70%;
 
- }
- #slide2 .prevbutton{
+}
+#slide2 .prevbutton{
 	float: left;
 }
 #slide2 .playbutton{
@@ -385,7 +398,7 @@ top: 35vh; bottom: 0;
 }
 
 #slide2>.lecteur>.player>.waveform {
-	filter: brightness(16%) sepia(1) hue-rotate(170deg);
+    filter: brightness(16%) sepia(1) hue-rotate(174deg);
 }
 
 .btn-shiny-contain {
@@ -456,10 +469,6 @@ top: 50vh; bottom: 0;
 width: 50vw;
 z-index: 3;
 }
-
-#slide3 .waveform{
-	filter : grayscale(50%);
-}
 #slide3 .button{
 	position:absolute;
 	margin-top: 37vh;
@@ -477,7 +486,7 @@ z-index: 3;
 	float: right;
 }
 
-#slide3 #img{
+#slide3 .img{
 	width: 100vw;
 	height: 100vh;
 	padding-top: 20vh;
@@ -555,6 +564,12 @@ z-index: 3;
 }
 .btn-diagonal-contain:hover  .btn-diagonal-inner {
 	color: rgba(255,255,255,1);
+}
+
+/*slide4*/
+
+#slide4>.lecteur>.player>.waveform {
+	filter: brightness(1.3%);
 }
 
 .btn-outline-contain {
