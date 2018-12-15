@@ -268,33 +268,33 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	margin-top: 2vh;
 }
 #slide1 .player{
-    top: 50vh;
+    top: 10vh;
     bottom: 0;
     width: 100vw;
     z-index: 3;
 }
 #slide1 .button{
     position:absolute;
-    margin-top: 37vh;
-    margin-left: 25vw;
     width: 50%;
 }
-#slide3 .prevbutton{
+#slide1 .prevbutton{
     float: left;
 }
-#slide3 .playbutton{
+#slide1 .playbutton{
     float: left;
 }
-#slide3 .nextbutton{
+#slide1 .nextbutton{
     float: left;
 }
 #slide1>.flavortext {
 	font-family: 'Coves';
 	font-weight: normal;
     font-style: normal;
-	position: absolute;
 	font-size: 1.5em;
-	display: inline-block;
+    text-align: justify;
+    width: 55%;
+    margin-left: 45vw;
+    margin-top: 25vh;
 }
 
 .btn-underline-contain {
@@ -388,7 +388,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
  font-family: 'Coves';
  font-weight: normal;
  font-style: normal;
- font-size : 1.4em;
+ font-size : 1.5em;
  text-align: justify;
  width: 55%;
  position: absolute;
@@ -506,7 +506,7 @@ z-index: 3;
  font-family: 'Coves';
  font-weight: normal;
  font-style: normal;
- font-size : 1.4em;
+ font-size : 1.5em;
  text-align: justify;
  width: 50%;
  position: absolute;
