@@ -12,14 +12,14 @@ $().ready(function(){
 
     $(".nextBtn, .prevBtn, #titre").click(function(){
         sudoSlider.runWhenNotAnimating(function () {
-            var currentSlide = sudoSlider.getValue('currentSlide')
+            let currentSlide = sudoSlider.getValue('currentSlide')
 			$(".player, iframe").remove();
             switch (currentSlide) {
                 case 1:
                     $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
                     player = SC.Widget($('iframe#list' + currentSlide)[0]);
                     jQuery.each(jQuery.browser, function(i, val) {
-                        if($.browser.msie){
+                        if($.browser.msedge){
                             $('.waveform').css('filter', "sepia(100%) saturate(1000%) hue-rotate(290deg) contrast(5%) brightness(163%)");
                         } else if($.browser.mozilla){
                             $('.waveform').css('filter', "sepia(100%) saturate(1000%) hue-rotate(290deg) contrast(5%) brightness(163%)");
@@ -38,7 +38,9 @@ $().ready(function(){
                     $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list3" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
                     player = SC.Widget($('iframe#list' + currentSlide)[0]);
                     jQuery.each(jQuery.browser, function(i, val) {
-                        if($.browser.mozilla){
+                        if($.browser.msedge){
+                            $('.waveform').css('filter', "sepia(100%) saturate(1000%) hue-rotate(290deg) contrast(5%) brightness(163%)");
+                        } else if($.browser.mozilla){
                             $('.waveform').css('filter', "sepia(100%) saturate(1000%) hue-rotate(10deg) contrast(10%) brightness(130%)");
                         } else {
                             $('.waveform').css('filter', "sepia(1) hue-rotate(10deg) saturate(150%) brightness(71%)");
@@ -93,6 +95,7 @@ $().ready(function(){
                 }
             });
             setInfo();
+            player.seekTo(0);
         });
         $(".prevbutton").click(function(){
             player.prev();
@@ -104,6 +107,7 @@ $().ready(function(){
                 }
             });
             setInfo();
+            player.seekTo(0);
         });
 
         $('.player').click(function(){ //Use the position to seek when clicked

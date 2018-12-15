@@ -46,7 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+@font-face {
+    font-family: "Amethyst";
+    font-weight: normal;
+    src: url('css/fonts/Amethyst.ttf');
+}
 @font-face {
 	font-family: "Coves";
 	font-weight: bold;
@@ -567,6 +571,41 @@ z-index: 3;
 }
 
 /*slide4*/
+#slide4 .intitule {
+    font-family: 'Amethyst';
+    font-size: 3em;
+    margin-top: 2vh;
+    color: white;
+}
+#slide4 .player{
+    top: 10vh;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
+}
+#slide4 .button{
+    position:absolute;
+    width: 50%;
+}
+#slide4 .prevbutton{
+    float: left;
+}
+#slide4 .playbutton{
+    float: left;
+}
+#slide4 .nextbutton{
+    float: left;
+}
+#slide4>.flavortext {
+    font-family: 'Coves';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: justify;
+    width: 55%;
+    margin: auto;
+    color: white;
+}
 
 #slide4>.lecteur>.player>.waveform {
 	filter: brightness(1.3%);
