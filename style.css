@@ -128,34 +128,7 @@ footer{
 
 /* boutons avec numeros de diapos */
 ol.numericControls {
-	margin:250px 0 1em 0;
-	padding:0;
-	height:28px;	
-}
-ol.numericControls li{
-	margin:0 10px 0 0; 
-	padding:0;
-	float:left;
-	list-style:none;
-	height:28px;
-	line-height:28px;
-}
-ol.numericControls li a{
-	float:left;
-	height:28px;
-	line-height:28px;
-	border:1px solid #ccc;
-	background:#DAF3F8;
-	color:#555;
-	padding:0 10px;
-	text-decoration:none;
-}
-ol.numericControls li.current a{
-	background:#5DC9E1;
-	color:#fff;
-}
-ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
-	outline:none;
+	display: none;
 }
 
 /* boutons suivant et précédent */
@@ -706,4 +679,14 @@ z-index: 3;
 	0% { width: 0; right: 0;}
 	55% {width: 100%; right: 0;}
 	100% {width: 0; right: 100%;}
+}
+
+/* responsive */
+@media screen and (max-width: 992px) {
+	#slide1 .flavortext {
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 600px) {
+
 }
