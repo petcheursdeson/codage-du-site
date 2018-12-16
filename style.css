@@ -366,6 +366,13 @@ ol.numericControls {
 #slide2>.lecteur>.player>.waveform {
     filter: brightness(16%) sepia(1) hue-rotate(174deg);
 }
+#slide2 .img{
+	width: 100vw;
+	height: 100vh;
+	padding-top: 20vh;
+	position :absolute;
+	z-index:1;
+}
 
 .btn-shiny-contain {
 	max-width: 270px;
@@ -432,13 +439,13 @@ ol.numericControls {
 	margin-top: 2vh;
 }
 #slide3 .player{
-top: 50vh; bottom: 0;
-width: 50vw;
+top: 55vh; bottom: 0;
+width: 54%;
 z-index: 3;
 }
 #slide3 .button{
 	position:absolute;
-	margin-top: 37vh;
+	margin-top: 42vh;
 	margin-left: 25vw;
 	width: 50%;
 	z-index: 3;
@@ -454,18 +461,18 @@ z-index: 3;
 }
 
 #slide3 .img{
-	width: 100vw;
-	height: 100vh;
-	padding-top: 20vh;
+	width: 100%;
+	height: 100%;
+	padding-top: 27vh;
 	position :absolute;
 	z-index:1;
 }
 #towerLeft{
-	width : 25vw;
+	width : 25%;
 	float: left;
 }
 #towerRight{
-	width: 25vw;
+	width: 25%;
 	float: right;
 	transform: scaleX(-1);
 }
@@ -478,7 +485,7 @@ z-index: 3;
     width: 50%;
     position: absolute;
     margin-left: 25vw;
-    margin-top: 20vh;
+    margin-top: 27vh;
 }
 /* boutons */
 .playbutton, .nextbutton, .prevbutton {
@@ -543,23 +550,33 @@ z-index: 3;
     color: white;
 }
 #slide4 .player{
-    top: 10vh;
+    top: 4vh;
     bottom: 0;
     width: 100vw;
+    margin-bottom: 2vh;
     z-index: 3;
 }
 #slide4 .button{
+	padding-top: 4%;
     position:absolute;
     width: 50%;
+    left : 50vw;
+    transform :translate(-50%);
+    top : 35vh;
 }
-#slide4 .prevbutton{
-    float: left;
+#slide4 .randombutton{
+    margin-left: 35%;
+	width: 15vw;
 }
 #slide4 .playbutton{
-    float: left;
+	margin-top: 1vh; 
 }
+#slide4 .prevbutton{
+	margin-top: 6vh; 
+}
+
 #slide4 .nextbutton{
-    float: left;
+	margin-top: 1vh; 
 }
 #slide4>.flavortext {
 	font-family: 'Coves', sans-serif;
@@ -567,9 +584,13 @@ z-index: 3;
     font-style: normal;
     font-size: 1.5em;
     text-align: justify;
-    width: 55%;
-    margin: auto;
+    width: 80%;
+    margin-top: 7vh;
     color: white;
+    display: inline-block;
+    columns: 2 250px;
+    column-gap: 25vw;
+   
 }
 
 #slide4>.lecteur>.player>.waveform {
