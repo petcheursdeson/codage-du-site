@@ -4,7 +4,6 @@ $().ready(function(){
         $("#diaporama").css("height","86vh");
         $("header").css("height","7vh");
         $("footer").css("height","7vh");
-        $("#logo").css("visibility","visible");
     });
 
     let sudoSlider = $("#contenu").sudoSlider({
@@ -118,7 +117,7 @@ $().ready(function(){
 
         $(cssPlayer).click(function(){ //Use the position to seek when clicked
             $('.position').css('width',scrub+"px");
-            var seek = player.duration*(scrub/pWidth);
+            const seek = player.duration * (scrub / pWidth);
 
             //Seeking to the start would be a previous?
             if ( seek < player.duration * .05 ) {
@@ -136,18 +135,18 @@ $().ready(function(){
         player.getCurrentSound(function(song) {
 
             // Soundcloud just borked this api endpoint, hence this hack :/
-            var waveformPng =
+            const waveformPng =
                 song.waveform_url
                     .replace('json', 'png')
                     .replace('wis', 'w1');
 
-            var artworkUrl = song.artwork_url || '';
+            const artworkUrl = song.artwork_url || '';
 
             $('.waveform').css('background-image', "url('" + waveformPng + "')");
             $('.player').css('background-image', "url('" + artworkUrl.replace('-large', '-t500x500') + "')");
 
-            var info = song.title;
-            $('.info').html(info);
+            const title = song.title;
+            $('.info').html(title);
 
             player.current = song;
         });
