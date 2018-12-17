@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 651 478" style="enable-background:new 0 0 651 478;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+	.st0{fill:#828282;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 	.st2{fill:#54575F;}
 	.st3{fill:#82858D;}
 	.st4{fill:#222327;}
@@ -13,16 +13,8 @@
 	.st7{fill:#899095;}
 	.st8{fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
 </style>
-<g id="Calque_3">
-	<g>
-		<g>
-			<path class="st0" d="M632,470H21c-6.6,0-12-5.4-12-12V20c0-6.6,5.4-12,12-12h611c6.6,0,12,5.4,12,12v438
-				C644,464.6,638.6,470,632,470z"/>
-			<path class="st1" d="M632,470H21c-6.6,0-12-5.4-12-12V20c0-6.6,5.4-12,12-12h611c6.6,0,12,5.4,12,12v438
-				C644,464.6,638.6,470,632,470z"/>
-		</g>
-	</g>
-</g>
+<path class="st0" d="M75.3,447.2C668,596.9,619.1,43.2,609.4,31.9C610,181.9,569,551.9,75.3,447.2z"/>
+<path class="st1" d="M609.4,31.9c0,0,39.9,543.2-534.1,415.3C125.8-87.9,609.4,31.9,609.4,31.9z"/>
 <g id="Calque_2_1_">
 	<g>
 		<g>
