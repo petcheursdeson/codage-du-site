@@ -12,19 +12,18 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -39,7 +38,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
 	content: none;
 }
 table {
@@ -47,9 +45,9 @@ table {
 	border-spacing: 0;
 }
 @font-face {
-    font-family: "Amethyst";
-    font-weight: normal;
-    src: url('css/fonts/Amethyst.ttf');
+	font-family: "Amethyst";
+	font-weight: normal;
+	src: url('css/fonts/Amethyst.ttf');
 }
 @font-face {
 	font-family: "Coves";
@@ -62,9 +60,9 @@ table {
 	src: url('css/fonts/Coves Light.otf');
 }
 @font-face {
-    font-family: 'Neon Absolute Sans';
-    src: url('css/fonts/NeonAbsoluteSans.ttf');
-    font-weight: normal;
+	font-family: 'Neon Absolute Sans';
+	src: url('css/fonts/NeonAbsoluteSans.ttf');
+	font-weight: normal;
 }
 @font-face {
 	font-family: "Urban Jungle";
@@ -93,23 +91,22 @@ header{
 	height: 50vh;
 	width: 100vw;
 	z-index: 5;
- 	transition: ease-out 1s;
+	transition: ease-out 1s;
 }
 
 footer{
 	height: 50vh;
- 	width: 100vw;
+	width: 100vw;
 	position : absolute;
 	bottom:0;
- 	z-index: 5;
- 	transition: ease-out 1s;
+	z-index: 5;
+	transition: ease-out 1s;
 }
 
 #titre{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: bold;
     font-style: normal;
-	position: absolute;
 	position: sticky;
 	top: 50vh;
 	font-size: 3rem;
@@ -119,11 +116,11 @@ footer{
 }
 
 #diaporama {
-    position: relative;
-    overflow: hidden;
-	text-align: center;	
-	height: 0vh;    
- 	transition: ease-out 1s;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	height: 0;
+	transition: ease-out 1s;
 }
 
 /* boutons avec numeros de diapos */
@@ -172,7 +169,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	z-index:1000;
 	cursor:pointer;
 
-}	
+}
 .prevBtn{
 	left: 1vw;
 	background: url(images/back.svg) no-repeat 0 0;
@@ -216,98 +213,93 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 
 /* player */
 .player {
-  cursor: pointer;
-  position: relative;
-  top: 0; bottom: 0;
-  margin: auto;
-  height: 150px;
-  width: 70%;
-  font-family: Coves;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 1s linear;
+	cursor: pointer;
+	position: relative;
+	top: 0; bottom: 0;
+	margin: auto;
+	height: 150px;
+	width: 70%;
+	font-family: Coves, sans-serif;
+	background-size: cover;
+	background-position: center;
+	transition: background-image 1s linear;
 }
 
 .waveform {
-  z-index: 3;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-size: 100% 100%;
-  transition: background-image 1s linear;
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-size: 100% 100%;
+	transition: background-image 1s linear;
 }
 
 .position {
-  opacity: 0.3;
-  position: absolute;
-  height: 100%;
-  width: 0;
-  transition: width .1s linear;
-  background-color: black;
+	opacity: 0.3;
+	position: absolute;
+	height: 100%;
+	width: 0;
+	transition: width .1s linear;
+	background-color: black;
 }
 
 .info {
-  user-select: none;
-  z-index: 5;
-  position: absolute;
-  height: 1em;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  font-size: 2rem;
-  letter-spacing: -.08em;
-  display: block;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: center;
-  color: white;
+	user-select: none;
+	z-index: 5;
+	position: absolute;
+	height: 1em;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 2rem;
+	letter-spacing: -.08em;
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
+	color: white;
 }
 
 /* slide numéro 1*/
+
 @keyframes nuage1 {
-  from {left: -20vh;} to {left: 55vh;}
+	from {left: 10vw;} to {left: 55vw;}
 }
 @keyframes nuage2 {
-  from {left: 75vh;} to {left: -20vh;}
+	from {left: 75vw;} to {left: 10vw;}
 }
 @keyframes nuage4 {
-  from {left: 25vh;} to {left: 120vh;}
+	from {left: 25vw;} to {left: 90vw;}
 }
 @keyframes nuage3 {
-  from {left: 120vh;} to {left: 35vh;}
+	from {left: 90vw;} to {left: 35vw;}
 }
+
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
 	margin-top: 2vh;
 }
-#slide1 #tv{
-	position: absolute;
-	transform: rotate(2deg);
-	width: 10vh;
-	left: 25vw;
-	top: 35.9vh;
-}
 
 #nuage1{
-	animation: nuage1 36s linear infinite alternate;
-	width: 22vh;
+	animation: nuage1 45s linear infinite alternate;
+	width: 12vw;
 }
 #nuage2{
-	animation: nuage2 27s linear infinite alternate;
-	width: 20vh;
+	animation: nuage2 36s linear infinite alternate;
+	width: 10vw;
 }
 #nuage3{
-	animation: nuage3 33s ease-out infinite alternate;
-	width: 20vh;
+	animation: nuage3 42s ease-out infinite alternate;
+	width: 10vw;
 }
 #nuage4{
-	animation: nuage4 30s ease-out infinite alternate;
-	width: 22vh;
+	animation: nuage4 39s ease-out infinite alternate;
+	width: 12vw;
 }
 #nuage1, #nuage3{
 	position: absolute;
@@ -329,7 +321,9 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
     position:absolute;
     left: 5vw;
     top: 45vh;
-    width: 40%;
+	bottom: 0;
+	width: 100vw;
+	z-index: 3;
 }
 #slide1 .randombutton{
 	margin-left: 50%;
@@ -340,30 +334,29 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
     float: left;
 }
 #slide1 .playbutton{
-		width: 33.33%;
-    float: center;
+	width: 33.33%;
 }
 #slide1 .nextbutton{
-		width: 33.33%;
-    float: right;
+	width: 33.33%;
+	float: right;
 }
 #slide1>.flavortext {
 	position: absolute;
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
-    font-style: normal;
+	font-style: normal;
 	font-size: 1.5em;
-    text-align: justify;
-    width: 45%;
-    margin-left: 45vw;
-    margin-top: 25vh;
+	text-align: justify;
+	width: 45%;
+	margin-left: 45vw;
+	margin-top: 25vh;
 }
 
 .btn-underline-contain {
 	max-width: 270px;
 }
 .btn-underline {
-	font-family:'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -395,9 +388,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 .btn-underline:hover {
 	border: 2px solid #ffac91;
-	-moz-border-image: -moz-linear-gradient(top , #ffac91 0%, #ff7d52 100%);
-	-webkit-border-image: -webkit-linear-gradient(top, #ffac91 0%, #ff7d52 100%);
-	border-image: linear-gradient(to bottom, #ffac91 0%, #ff7d52 100%);
 	border-image-slice: 1;
 }
 .btn-underline span {
@@ -409,24 +399,24 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 
 /* slide numéro 2*/
 @keyframes neon {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01fdf6, 0 0 35px #01fdf6, 0 0 40px #01fdf6, 0 0 50px #01fdf6, 0 0 75px #01fdf6;
-  }
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
+	}
+	to {
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01fdf6, 0 0 35px #01fdf6, 0 0 40px #01fdf6, 0 0 50px #01fdf6, 0 0 75px #01fdf6;
+	}
 }
 
 #slide2 .intitule {
-	font-family: 'Neon Absolute Sans';
+	font-family: 'Neon Absolute Sans', sans-serif;
 	animation: neon 1.5s ease-in-out infinite alternate;
 	color: #ffffff;
 	font-size: 3em;
 	margin-top: 2vh;
 }
 #slide2 .player{
-    top: 35vh;
-    bottom: 0;
+	top: 35vh;
+	bottom: 0;
 }
 
 #slide2 .button{
@@ -447,7 +437,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 #slide2>.flavortext{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -460,7 +450,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 #slide2>.lecteur>.player>.waveform {
-    filter: brightness(16%) sepia(1) hue-rotate(174deg);
+	filter: brightness(16%) sepia(1) hue-rotate(174deg);
 }
 #slide2 .img{
 	width: 100vw;
@@ -474,15 +464,13 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	max-width: 270px;
 }
 .btn-shiny {
-	font-family:'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
-	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
 	outline: none;
 	cursor: pointer;
-	border: none;
 	padding: 20px;
 	display: block;
 	margin: 50px auto;
@@ -526,10 +514,22 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	background: #01FDF6;
 }
 
-
-/*slide 3 ----------------------*/
+/*slide 3 */
+#slide3 {
+	background: #b1b695;
+}
+@keyframes plane {
+	from {left: 10vw; } to {left: 90vw;}
+}
+#plane{
+	animation: plane 45s linear infinite alternate;
+	width: 10vw;
+	margin-top: 5vh;
+	position: absolute;
+	z-index: 2;
+}
 #slide3 .intitule {
-	font-family: "Urban Jungle";
+	font-family: "Urban Jungle", fantasy;
 	font-size: 3em;
 	margin-top: 2vh;
 }
@@ -544,8 +544,8 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	margin-left: 25vw;
 	width: 50%;
 	z-index: 3;
- }
- #slide3 .prevbutton{
+}
+#slide3 .prevbutton{
 	float: left;
 }
 #slide3 .playbutton{
@@ -572,7 +572,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	transform: scaleX(-1);
 }
 #slide3>.flavortext{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif ;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -616,7 +616,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	border: 3px solid white;
 }
 .btn-diagonal-inner {
-	font-family:'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -624,7 +624,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	text-decoration: none;
 	position: relative;
 	top: 50px;
-	font-weight: bold;
 	color: rgba(255,255,255,0.5);
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
@@ -637,53 +636,53 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 
 /*slide4*/
 #slide4 .intitule {
-    font-family: 'Amethyst';
-    font-size: 3em;
-    margin-top: 2vh;
-    color: white;
+	font-family: 'Amethyst', fantasy;
+	font-size: 3em;
+	margin-top: 2vh;
+	color: white;
 }
 #slide4 .player{
-    top: 4vh;
-    bottom: 0;
-    width: 100vw;
-    margin-bottom: 2vh;
-    z-index: 3;
+	top: 4vh;
+	bottom: 0;
+	width: 100vw;
+	margin-bottom: 2vh;
+	z-index: 3;
 }
 #slide4 .button{
 	padding-top: 4%;
-    position:absolute;
-    width: 50%;
-    left : 50vw;
-    transform :translate(-50%);
-    top : 35vh;
+	position:absolute;
+	width: 50%;
+	left : 50vw;
+	transform :translate(-50%);
+	top : 35vh;
 }
 #slide4 .randombutton{
-    margin-left: 35%;
+	margin-left: 35%;
 	width: 15vw;
 }
 #slide4 .playbutton{
-	margin-top: 1vh; 
+	margin-top: 1vh;
 }
 #slide4 .prevbutton{
-	margin-top: 6vh; 
+	margin-top: 6vh;
 }
 
 #slide4 .nextbutton{
-	margin-top: 1vh; 
+	margin-top: 1vh;
 }
 #slide4>.flavortext {
-    font-family: 'Coves';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1.5em;
-    text-align: justify;
-    width: 80%;
-    margin-top: 7vh;
-    color: white;
-    display: inline-block;
-    columns: 2 250px;
-    column-gap: 25vw;
-   
+	font-family: 'Coves', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.5em;
+	text-align: justify;
+	width: 80%;
+	margin-top: 7vh;
+	color: white;
+	display: inline-block;
+	columns: 2 250px;
+	column-gap: 25vw;
+
 }
 
 #slide4>.lecteur>.player>.waveform {
@@ -706,7 +705,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	position: relative;
 	border: 1px solid rgba(255, 235, 59, 0.5);
 	color: rgba(255, 235, 59, 0.5);
-	text-decoration: none;
 	padding: 20px;
 	display: block;
 	-webkit-transition: .5s ease-in-out;
@@ -785,4 +783,32 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	0% { width: 0; right: 0;}
 	55% {width: 100%; right: 0;}
 	100% {width: 0; right: 100%;}
+}
+
+/* responsive */
+@media screen and (max-width: 1200px) {
+	.playbutton+.prevbutton+.nextbutton{
+		width: 10vw;
+	}
+}
+@media screen and (max-width: 992px) {
+	#slide1 .flavortext {
+		margin: 20vh auto 0;
+		font-size: 2rem;
+	}
+	#slide1 .button{
+		margin-top: 2vh;
+		margin-left: 15vw;
+		width: 70%;
+	}
+	#slide1 .playbutton{
+		background-position: center;
+		float: none;
+	}
+	#slide1 .nextbutton{
+		float: right;
+	}
+}
+@media screen and (max-width: 768px) {
+
 }
