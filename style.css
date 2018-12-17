@@ -138,8 +138,8 @@ ol.numericControls {
 	display:block;
 	overflow:hidden;
 	text-indent:-8000px;
-	width:35px;
-	height:82px;
+	width:30px;
+	height:77px;
 	position:absolute;
 	top:41vh;
 	z-index:1000;
@@ -147,18 +147,19 @@ ol.numericControls {
 
 }	
 .prevBtn{
-	left: 1vw;
+	left: 0;
 	background: url(images/back.svg) no-repeat 0 0;
 }
 .prevBtn:hover, .nextBtn:hover{
 	filter: invert(1);
 	transform-origin: center;
-	transform: scale(1.1);
+	width:35px;
+	height:82px;
 	transition-duration: 0.25s;
 }
 
 .nextBtn{
-	right: 1vw;
+	right: 0;
 	background: url(images/next.svg) no-repeat 0 0;
 }
 #logo {
@@ -166,9 +167,6 @@ ol.numericControls {
 	padding: 1vh;
 	left: 0;
 	position :absolute;
-	visibility: hidden;
-	transition: visibility 2s ease-out 1.1s;
-
 }
 
 /* player */
@@ -240,18 +238,11 @@ ol.numericControls {
 @keyframes nuage3 {
   from {left: 90vw;} to {left: 35vw;}
 }
-@keyframes nuage6 {
-  from {left: 80vw;} to {left: 25vw;}
-}
-@keyframes nuage7 {
-  from {left: 35;} to {left: 90vw;}
-}
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
 	margin-top: 2vh;
 }
-
 #nuage1{
 	animation: nuage1 45s linear infinite alternate;
 	width: 12vw;
@@ -277,43 +268,32 @@ ol.numericControls {
 	position:absolute;
 	margin-top: 2vh;
 }
-
 #slide1 .player{
-	top: 60vh;
+    top: 10vh;
     bottom: 0;
     width: 100vw;
     z-index: 3;
 }
 #slide1 .button{
     position:absolute;
-    left: 5vw;
-    top: 45vh;
-    width: 40%;
-}
-#slide1 .randombutton{
-	margin-left: 50%;
-	width: 50%;
+    width: 50%;
 }
 #slide1 .prevbutton{
-	width: 33.33%;
-    float: left;
+	float: left;
 }
 #slide1 .playbutton{
-		width: 33.33%;
-    float: center;
+	float: left;
 }
 #slide1 .nextbutton{
-		width: 33.33%;
-    float: right;
+	float: left;
 }
 #slide1>.flavortext {
-	position: absolute;
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
     font-style: normal;
 	font-size: 1.5em;
     text-align: justify;
-    width: 45%;
+    width: 55%;
     margin-left: 45vw;
     margin-top: 25vh;
 }
@@ -354,6 +334,8 @@ ol.numericControls {
 }
 .btn-underline:hover {
 	border: 2px solid #ffac91;
+	-moz-border-image: -moz-linear-gradient(top , #ffac91 0%, #ff7d52 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #ffac91 0%, #ff7d52 100%);
 	border-image-slice: 1;
 }
 .btn-underline span {
@@ -406,16 +388,16 @@ ol.numericControls {
 }
 
 #slide2>.flavortext{
-	font-family: 'Coves';
-	font-weight: normal;
-	font-style: normal;
-	font-size : 1.5em;
-	text-align: justify;
-	width: 55%;
-	position: absolute;
-	margin-left: 15vw;
-	margin-top: 55vh;
-	color: #01fdf6;
+	font-family: 'Coves', sans-serif;
+ font-weight: normal;
+ font-style: normal;
+ font-size : 1.5em;
+ text-align: justify;
+ width: 55%;
+ position: absolute;
+ margin-left: 15vw;
+ margin-top: 55vh;
+ color: #01fdf6;
 }
 
 #slide2>.lecteur>.player>.waveform {
@@ -450,7 +432,6 @@ ol.numericControls {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
 	overflow: hidden;
 	color: #267D7B;
 }
@@ -467,16 +448,15 @@ ol.numericControls {
 	-ms-transform: rotateZ(45deg);
 }
 .btn-shiny:hover {
-	background: #4DFEF9;
+	background: #4DFDF8;
 	border: 2px solid #007D7A;
-	color: #267D7E;
+	color: #267D7B;
 }
 .btn-shiny:hover .shiny-line {
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
 	left: 185px; /* May need to change this depending on length of button */
 }
 .btn-shiny:active{
@@ -504,9 +484,9 @@ ol.numericControls {
 	margin-top: 2vh;
 }
 #slide3 .player{
-	top: 55vh; bottom: 0;
-	width: 54%;
-	z-index: 3;
+top: 55vh; bottom: 0;
+width: 54%;
+z-index: 3;
 }
 #slide3 .button{
 	position:absolute;
@@ -542,15 +522,15 @@ ol.numericControls {
 	transform: scaleX(-1);
 }
 #slide3>.flavortext{
-	font-family: 'Coves';
-	font-weight: normal;
-	font-style: normal;
-	font-size : 1.5em;
-	text-align: justify;
-	width: 50%;
-	position: absolute;
-	margin-left: 25vw;
-	margin-top: 27vh;
+	font-family: 'Coves', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size : 1.5em;
+    text-align: justify;
+    width: 50%;
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 27vh;
 }
 /* boutons */
 .playbutton, .nextbutton, .prevbutton {
