@@ -177,7 +177,7 @@ ol.numericControls {
 	position: relative;
 	top: 0; bottom: 0;
 	margin: auto;
-	height: 150px;
+	height: 10vh;
 	width: 70%;
 	font-family: Coves, sans-serif;
 	background-size: cover;
@@ -289,10 +289,6 @@ ol.numericControls {
 	left: 5vw;
 	top: 45vh;
 	width: 40%;
-}
-#slide1 .randombutton{
-	margin-left: 50%;
-	width: 50%;
 }
 #slide1 .prevbutton{
 	width: 33.33%;
@@ -628,10 +624,6 @@ ol.numericControls {
 	transform :translate(-50%);
 	top : 35vh;
 }
-#slide4 .randombutton{
-	margin-left: 35%;
-	width: 15vw;
-}
 #slide4 .playbutton{
 	margin-top: 1vh;
 }
@@ -764,23 +756,64 @@ ol.numericControls {
 	}
 }
 @media screen and (max-width: 992px) {
-	#slide1 .flavortext {
-		margin: 20vh auto 0;
-		font-size: 2rem;
-	}
+    #titre {
+        font-size: 5rem;
+    }
+    .info {
+        font-size: 4rem;
+    }
+}
+
+    /*slide1*/
+
+    #slide1 .flavortext {
+        margin-top: 15vh;
+        font-size: 3rem;
+        margin-left: 10.5vw;
+        width: 80vw;
+        background-position: center;
+    }
+    #slide1 .intitule {
+        font-size: 6rem;
+    }
+    #nuage1 {
+        width: 12vh;
+    }
+    #nuage2 {
+        width: 10vh;
+    }
+    #nuage3 {
+        width: 10vh;
+    }
+    #nuage4 {
+        width: 12vh;
+    }
 	#slide1 .button{
 		margin-top: 2vh;
-		margin-left: 15vw;
+		margin-left: 0.5vw;
 		width: 70%;
+        left: 0;
 	}
 	#slide1 .playbutton{
 		background-position: center;
 		float: none;
+        width: 0;
 	}
+    #slide1 .prevbutton {
+        width: 0;
+    }
 	#slide1 .nextbutton{
 		float: right;
+        width: 0;
 	}
-}
+    .btn-underline {
+        font-size: 3rem;
+        width: 23vw;
+    }
+    #slide1 .player {
+        top: 50vh;
+        height: 20vh;
+    }
 @media screen and (max-width: 768px) {
 
 }
