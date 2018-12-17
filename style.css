@@ -489,7 +489,7 @@ ol.numericControls {
 	background: #b1b695;
 }
 @keyframes plane {
-	from {left: 10vw; transform: scaleX(1);} to {left: 90vw; transform: scaleX(-1);}
+	from {left: 10vw; } to {left: 90vw;}
 }
 #plane{
 	animation: plane 45s linear infinite alternate;
