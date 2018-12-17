@@ -4,6 +4,7 @@ $().ready(function(){
         $("#diaporama").css("height","86vh");
         $("header").css("height","7vh");
         $("footer").css("height","7vh");
+        $("#logo").css("visibility","visible");
     });
 
     let sudoSlider = $("#contenu").sudoSlider({

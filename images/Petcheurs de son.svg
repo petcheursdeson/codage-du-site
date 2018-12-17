@@ -3,8 +3,8 @@
 <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 651 478" style="enable-background:new 0 0 651 478;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:none;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+	.st0{fill:#828282;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
 	.st2{fill:#54575F;}
 	.st3{fill:#82858D;}
 	.st4{fill:#222327;}
@@ -13,33 +13,22 @@
 	.st7{fill:#899095;}
 	.st8{fill:none;stroke:#000000;stroke-width:0.25;stroke-miterlimit:10;}
 </style>
-<g id="Calque_3">
-	<g>
-		<g>
-			<path class="st0" d="M632,470H21c-6.6,0-12-5.4-12-12V20c0-6.6,5.4-12,12-12h611c6.6,0,12,5.4,12,12v438
-				C644,464.6,638.6,470,632,470z"/>
-			<path class="st1" d="M632,470H21c-6.6,0-12-5.4-12-12V20c0-6.6,5.4-12,12-12h611c6.6,0,12,5.4,12,12v438
-				C644,464.6,638.6,470,632,470z"/>
-		</g>
-	</g>
-</g>
+<path class="st0" d="M75.3,447.2C668,596.9,619.1,43.2,609.4,31.9C610,181.9,569,551.9,75.3,447.2z"/>
+<path class="st1" d="M609.4,31.9c0,0,39.9,543.2-534.1,415.3C125.8-87.9,609.4,31.9,609.4,31.9z"/>
 <g id="Calque_2_1_">
-	
-		<image style="overflow:visible;opacity:0.5;enable-background:new    ;" width="178" height="184" xlink:href="DB4914E1.png"  transform="matrix(1 0 0 1 139 247)">
-	</image>
 	<g>
 		<g>
 			<g>
 				
-					<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 -167.1739 453.6741)" class="st2" cx="220.1" cy="338.7" rx="62" ry="49"/>
+					<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 -167.1453 453.6147)" class="st2" cx="220" cy="338.7" rx="62" ry="49"/>
 			</g>
 			<g>
 				
-					<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 -162.9549 464.9298)" class="st3" cx="229.7" cy="341.5" rx="60.3" ry="49"/>
+					<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 -162.9765 464.8835)" class="st3" cx="229.7" cy="341.5" rx="60.3" ry="49"/>
 			</g>
 			<g>
 				
-					<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 -159.6624 473.6373)" class="st4" cx="237.2" cy="343.7" rx="57.3" ry="49"/>
+					<ellipse transform="matrix(0.2836 -0.9589 0.9589 0.2836 -159.6346 473.6363)" class="st4" cx="237.2" cy="343.7" rx="57.3" ry="49"/>
 			</g>
 			<g>
 				<circle class="st5" cx="240.5" cy="301.6" r="4.4"/>
@@ -67,15 +56,12 @@
 			</g>
 			<g>
 				
-					<ellipse transform="matrix(0.2273 -0.9738 0.9738 0.2273 -148.8581 496.8078)" class="st6" cx="238.6" cy="342.2" rx="20.3" ry="15.3"/>
+					<ellipse transform="matrix(0.2273 -0.9738 0.9738 0.2273 -148.9098 496.8121)" class="st6" cx="238.6" cy="342.2" rx="20.3" ry="15.3"/>
 			</g>
 		</g>
 	</g>
 </g>
 <g id="Calque_1_1_">
-	
-		<image style="overflow:visible;opacity:0.5;enable-background:new    ;" width="427" height="440" xlink:href="DB4914E3.png"  transform="matrix(1 0 0 1 84 13)">
-	</image>
 	<g>
 		<g>
 			<g>
