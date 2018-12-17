@@ -229,45 +229,44 @@ ol.numericControls {
 	background: #efd1d5;
 }
 @keyframes nuage1 {
-  from {left: -20vh;} to {left: 55vh;}
+  from {left: 10vw;} to {left: 55vw;}
 }
 @keyframes nuage2 {
-  from {left: 75vh;} to {left: -20vh;}
+  from {left: 75vw;} to {left: 10vw;}
 }
 @keyframes nuage4 {
-  from {left: 25vh;} to {left: 120vh;}
+  from {left: 25vw;} to {left: 90vw;}
 }
 @keyframes nuage3 {
-  from {left: 120vh;} to {left: 35vh;}
+  from {left: 90vw;} to {left: 35vw;}
+}
+@keyframes nuage6 {
+  from {left: 80vw;} to {left: 25vw;}
+}
+@keyframes nuage7 {
+  from {left: 35;} to {left: 90vw;}
 }
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
 	margin-top: 2vh;
 }
-#slide1 #tv{
-	position: absolute;
-	transform: rotate(2deg);
-	width: 10vh;
-	left: 25vw;
-	top: 35.9vh;
-}
 
 #nuage1{
-	animation: nuage1 36s linear infinite alternate;
-	width: 22vh;
+	animation: nuage1 45s linear infinite alternate;
+	width: 12vw;
 }
 #nuage2{
-	animation: nuage2 27s linear infinite alternate;
-	width: 20vh;
+	animation: nuage2 36s linear infinite alternate;
+	width: 10vw;
 }
 #nuage3{
-	animation: nuage3 33s ease-out infinite alternate;
-	width: 20vh;
+	animation: nuage3 42s ease-out infinite alternate;
+	width: 10vw;
 }
 #nuage4{
-	animation: nuage4 30s ease-out infinite alternate;
-	width: 22vh;
+	animation: nuage4 39s ease-out infinite alternate;
+	width: 12vw;
 }
 #nuage1, #nuage3{
 	position: absolute;
@@ -488,6 +487,16 @@ ol.numericControls {
 /*slide 3 */
 #slide3 {
 	background: #b1b695;
+}
+@keyframes plane {
+  from {left: 10vw; transform: scaleX(1);} to {left: 90vw; transform: scaleX(-1);}
+}
+#plane{
+	animation: plane 45s linear infinite alternate;
+	width: 10vw;
+	margin-top: 5vh;
+	position: absolute;
+	z-index: 2;
 }
 #slide3 .intitule {
 	font-family: "Urban Jungle", fantasy;
@@ -750,6 +759,11 @@ ol.numericControls {
 }
 
 /* responsive */
+@media screen and (max-width: 1200px) {
+	.playbutton+.prevbutton+.nextbutton{
+		width: 10vw; 
+	}
+}
 @media screen and (max-width: 992px) {
 	#slide1 .flavortext {
 		margin: 20vh auto 0;
@@ -768,6 +782,6 @@ ol.numericControls {
 		 float: right;
 	 }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
 }
