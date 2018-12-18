@@ -19,7 +19,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -39,7 +38,6 @@ blockquote, q {
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
 	content: none;
 }
 table {
@@ -129,10 +127,9 @@ footer, header {
 }
 
 #titre{
-	font-family: 'Coves';
+    font-family: 'Coves', sans-serif;
 	font-weight: bold;
     font-style: normal;
-	position: absolute;
 	position: sticky;
 	top: 50vh;
 	font-size: 3rem;
@@ -145,40 +142,16 @@ footer, header {
     position: relative;
     overflow: hidden;
 	text-align: center;	
-	height: 0vh;    
+	height: 0;
  	transition: ease-out 1s;
+}
+.slide {
+	height: 86vh;
 }
 
 /* boutons avec numeros de diapos */
 ol.numericControls {
-	margin:250px 0 1em 0;
-	padding:0;
-	height:28px;	
-}
-ol.numericControls li{
-	margin:0 10px 0 0; 
-	padding:0;
-	float:left;
-	list-style:none;
-	height:28px;
-	line-height:28px;
-}
-ol.numericControls li a{
-	float:left;
-	height:28px;
-	line-height:28px;
-	border:1px solid #ccc;
-	background:#DAF3F8;
-	color:#555;
-	padding:0 10px;
-	text-decoration:none;
-}
-ol.numericControls li.current a{
-	background:#5DC9E1;
-	color:#fff;
-}
-ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
-	outline:none;
+	display: none;
 }
 
 /* boutons suivant et précédent */
@@ -211,22 +184,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	right: 1vw;
 	background: url(images/next.svg) no-repeat 0 0;
 }
-
-.slide {
-	height: 86vh;
-}
-#slide1 {
-	background: #efd1d5;
-}
-#slide2 {
-	background: #292F3C;
-}
-#slide3 {
-	background: #b1b695;
-}
-#slide4 {
-	background: #040307;
-}
 #logo {
 	height: 5vh;
 	padding: 1vh;
@@ -245,7 +202,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
   margin: auto;
   height: 150px;
   width: 70%;
-  font-family: Coves;
+    font-family: Coves, sans-serif;
   background-size: cover;
   background-position: center;
   transition: background-image 1s linear;
@@ -291,6 +248,10 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 /* slide numéro 1*/
+
+#slide1 {
+	background: #efd1d5;
+}
 @keyframes nuage1 {
   from {left: -20vh;} to {left: 55vh;}
 }
@@ -303,6 +264,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 @keyframes nuage3 {
   from {left: 120vh;} to {left: 35vh;}
 }
+
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
@@ -344,15 +306,15 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 
 #slide1 .player{
 	top: 60vh;
-    bottom: 0;
-    width: 100vw;
-    z-index: 3;
+	bottom: 0;
+	width: 100vw;
+	z-index: 3;
 }
 #slide1 .button{
-    position:absolute;
-    left: 5vw;
-    top: 45vh;
-    width: 40%;
+	position:absolute;
+	left: 5vw;
+	top: 45vh;
+	width: 40%;
 }
 #slide1 .randombutton{
 	margin-left: 50%;
@@ -360,11 +322,10 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 #slide1 .prevbutton{
 	width: 33.33%;
-    float: left;
+	float: left;
 }
 #slide1 .playbutton{
-		width: 33.33%;
-    float: center;
+	width: 33.33%;
 }
 #slide1 .nextbutton{
 		width: 33.33%;
@@ -372,7 +333,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 #slide1>.flavortext {
 	position: absolute;
-	font-family: 'Coves';
+    font-family: 'Coves', sans-serif;
 	font-weight: normal;
     font-style: normal;
 	font-size: 1.5em;
@@ -386,7 +347,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	max-width: 270px;
 }
 .btn-underline {
-	font-family:'Coves';
+	font-family: 'Shadows Into Light', cursive;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -420,7 +381,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	border: 2px solid #ffac91;
 	-moz-border-image: -moz-linear-gradient(top , #ffac91 0%, #ff7d52 100%);
 	-webkit-border-image: -webkit-linear-gradient(top, #ffac91 0%, #ff7d52 100%);
-	border-image: linear-gradient(to bottom, #ffac91 0%, #ff7d52 100%);
 	border-image-slice: 1;
 }
 .btn-underline span {
@@ -431,6 +391,9 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 /* slide numéro 2*/
+#slide2 {
+	background: #292F3C;
+}
 @keyframes neon {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
@@ -441,7 +404,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 #slide2 .intitule {
-	font-family: 'Neon Absolute Sans';
+    font-family: 'Neon Absolute Sans', sans-serif;
 	animation: neon 1.5s ease-in-out infinite alternate;
 	color: #ffffff;
 	font-size: 3em;
@@ -470,7 +433,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 #slide2>.flavortext{
-	font-family: 'Coves';
+    font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -497,15 +460,13 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	max-width: 270px;
 }
 .btn-shiny {
-	font-family:'Coves';
+	font-family: 'Neon Absolute Sans', sans-serif;
 	font-weight:bold;
 	text-align: center;
-	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
 	outline: none;
 	cursor: pointer;
-	border: none;
 	padding: 20px;
 	display: block;
 	margin: 50px auto;
@@ -549,9 +510,22 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	background: #01FDF6;
 }
 
-/*slide 3 ----------------------*/
+/*slide 3 */
+#slide3 {
+	background: #b1b695;
+}
+@keyframes plane {
+	from {left: 10vw; } to {left: 90vw;}
+}
+#plane{
+	animation: plane 45s linear infinite alternate;
+	width: 10vw;
+	margin-top: 5vh;
+	position: absolute;
+	z-index: 2;
+}
 #slide3 .intitule {
-	font-family: "Urban Jungle";
+    font-family: "Urban Jungle", fantasy;
 	font-size: 3em;
 	margin-top: 2vh;
 }
@@ -594,7 +568,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	transform: scaleX(-1);
 }
 #slide3>.flavortext{
-	font-family: 'Coves';
+    font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -638,7 +612,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	border: 3px solid white;
 }
 .btn-diagonal-inner {
-	font-family:'Coves';
+	font-family: 'Urban Jungle', fantasy;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -646,7 +620,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	text-decoration: none;
 	position: relative;
 	top: 50px;
-	font-weight: bold;
 	color: rgba(255,255,255,0.5);
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
@@ -658,8 +631,11 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 
 /*slide4*/
+#slide4 {
+	background: #040307;
+}
 #slide4 .intitule {
-    font-family: 'Amethyst';
+    font-family: 'Amethyst', fantasy;
     font-size: 3em;
     margin-top: 2vh;
     color: white;
@@ -696,7 +672,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 }
 #slide4>.flavortext {
 	position: absolute;
-    font-family: 'Coves';
+    font-family: 'Coves', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 1.5em;
@@ -725,7 +701,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 
 }
 .btn-outline {
-	font-family:sans-serif;
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -736,7 +712,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
 	position: relative;
 	border: 1px solid rgba(255, 235, 59, 0.5);
 	color: rgba(255, 235, 59, 0.5);
-	text-decoration: none;
 	padding: 20px;
 	display: block;
 	-webkit-transition: .5s ease-in-out;
@@ -821,7 +796,6 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
   width: 100%;
   height: 100%;
   background-color: black;
-  background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;

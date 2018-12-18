@@ -1,6 +1,6 @@
 $().ready(function(){
 
-    let setup = $("#titre").click(function(){
+    $("#titre").click(function(){
         $("#diaporama").css("height","86vh");
         $("header").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
         $("footer").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
@@ -11,15 +11,19 @@ $().ready(function(){
         numeric: true
     });
 
+    let player;
+
     $(".nextBtn, .prevBtn, #titre").click(function(){
         sudoSlider.runWhenNotAnimating(function () {
-            let currentSlide = sudoSlider.getValue('currentSlide')
+            let currentSlide = sudoSlider.getValue('currentSlide');
+            let slidePlayer = "#slide" + currentSlide + " .lecteur";
+            let currentIframe = 'iframe#list' + currentSlide;
 			$(".player, iframe").remove();
             switch (currentSlide) {
                 case 1:
-                    $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
-                    player = SC.Widget($('iframe#list' + currentSlide)[0]);
-                    jQuery.each(jQuery.browser, function(i, val) {
+                    $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list1" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/663867597&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+                    player = SC.Widget($(currentIframe)[0]);
+                    jQuery.each(jQuery.browser, function() {
                         if($.browser.msedge){
                             $('.waveform').css('filter', "sepia(100%) saturate(1000%) hue-rotate(290deg) contrast(5%) brightness(163%)");
                         } else if($.browser.mozilla){
@@ -31,14 +35,14 @@ $().ready(function(){
                     setupPlayer();
                     break;
                 case 2:
-                    $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/224846558&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
-                    player = SC.Widget($('iframe#list' + currentSlide)[0]);
+                    $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/663872259&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+                    player = SC.Widget($(currentIframe)[0]);
                     setupPlayer();
                     break;
                 case 3:
-                    $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list3" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
-                    player = SC.Widget($('iframe#list' + currentSlide)[0]);
-                    jQuery.each(jQuery.browser, function(i, val) {
+                    $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list3" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/663866475&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+                    player = SC.Widget($(currentIframe)[0]);
+                    jQuery.each(jQuery.browser, function() {
                         if($.browser.msedge){
                             $('.waveform').css('filter', "sepia(100%) saturate(1000%) hue-rotate(290deg) contrast(5%) brightness(163%)");
                         } else if($.browser.mozilla){
@@ -50,8 +54,8 @@ $().ready(function(){
                     setupPlayer();
                     break;
                 default:
-                    $("#slide" + currentSlide + " .lecteur").append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list4" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/649735404%3Fsecret_token%3Ds-pdsJD&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
-                    player = SC.Widget($('iframe#list' + currentSlide)[0]);
+                    $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list4" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/665388102&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
+                    player = SC.Widget($(currentIframe)[0]);
                     setupPlayer();
             }
             player.pause();
@@ -59,9 +63,10 @@ $().ready(function(){
     });
 
     function setupPlayer(){
-        var pOffset = $('.player').offset();
-        var pWidth = $('.player').width();
-        var scrub;
+        let cssPlayer = '.player';
+        const pOffset = $(cssPlayer).offset();
+        const pWidth = $(cssPlayer).width();
+        let scrub;
 
         player.bind(SC.Widget.Events.READY, function() {
             setInfo();
@@ -73,7 +78,7 @@ $().ready(function(){
             $('.position').css('width', ( e.relativePosition*100)+"%");
         });
 
-        $('.player').mousemove(function(e){ //Get position of mouse for scrubbing
+        $(cssPlayer).mousemove(function(e){ //Get position of mouse for scrubbing
             scrub = (e.pageX-pOffset.left);
         });
 
@@ -111,7 +116,7 @@ $().ready(function(){
             player.seekTo(0);
         });
 
-        $('.player').click(function(){ //Use the position to seek when clicked
+        $(cssPlayer).click(function(){ //Use the position to seek when clicked
             $('.position').css('width',scrub+"px");
             var seek = player.duration*(scrub/pWidth);
 
