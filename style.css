@@ -244,7 +244,7 @@ ol.numericControls {
 	from {left: 80vw;} to {left: 25vw;}
 }
 @keyframes nuage7 {
-	from {left: 35;} to {left: 90vw;}
+	from {left: 35vw;} to {left: 90vw;}
 }
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
@@ -300,7 +300,6 @@ ol.numericControls {
 }
 #slide1 .playbutton{
 	width: 33.33%;
-	float: center;
 }
 #slide1 .nextbutton{
 	width: 33.33%;
@@ -308,7 +307,7 @@ ol.numericControls {
 }
 #slide1>.flavortext {
 	position: absolute;
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1.5em;
@@ -406,7 +405,7 @@ ol.numericControls {
 }
 
 #slide2>.flavortext{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -542,7 +541,7 @@ ol.numericControls {
 	transform: scaleX(-1);
 }
 #slide3>.flavortext{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
