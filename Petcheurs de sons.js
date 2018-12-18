@@ -2,13 +2,8 @@ $().ready(function(){
 
     $("#titre").click(function(){
         $("#diaporama").css("height","86vh");
-<<<<<<< HEAD
-        $("header").css("height","7vh");
-        $("footer").css("height","7vh");
-=======
         $("header").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
         $("footer").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
->>>>>>> master
         $("#logo").css("visibility","visible");
     });
 

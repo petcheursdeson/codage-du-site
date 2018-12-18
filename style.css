@@ -199,7 +199,6 @@ ol.numericControls {
 
 /* player */
 .player {
-<<<<<<< HEAD
 	cursor: pointer;
 	position: relative;
 	top: 0; bottom: 0;
@@ -210,18 +209,6 @@ ol.numericControls {
 	background-size: cover;
 	background-position: center;
 	transition: background-image 1s linear;
-=======
-  cursor: pointer;
-  position: relative;
-  top: 0; bottom: 0;
-  margin: auto;
-  height: 150px;
-  width: 70%;
-    font-family: Coves, sans-serif;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 1s linear;
->>>>>>> master
 }
 
 .waveform {
@@ -268,7 +255,6 @@ ol.numericControls {
 	background: #efd1d5;
 }
 @keyframes nuage1 {
-<<<<<<< HEAD
 	from {left: 10vw;} to {left: 55vw;}
 }
 @keyframes nuage2 {
@@ -279,31 +265,13 @@ ol.numericControls {
 }
 @keyframes nuage3 {
 	from {left: 90vw;} to {left: 35vw;}
-=======
-  from {left: -20vh;} to {left: 55vh;}
 }
-@keyframes nuage2 {
-  from {left: 75vh;} to {left: -20vh;}
-}
-@keyframes nuage4 {
-  from {left: 25vh;} to {left: 120vh;}
-}
-@keyframes nuage3 {
-  from {left: 120vh;} to {left: 35vh;}
->>>>>>> master
-}
-@keyframes nuage6 {
-	from {left: 80vw;} to {left: 25vw;}
-}
-@keyframes nuage7 {
-	from {left: 35vw;} to {left: 90vw;}
-}
+
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
 	margin-top: 2vh;
 }
-<<<<<<< HEAD
 
 #nuage1{
 	animation: nuage1 45s linear infinite alternate;
@@ -320,32 +288,8 @@ ol.numericControls {
 #nuage4{
 	animation: nuage4 39s ease-out infinite alternate;
 	width: 12vw;
-=======
-#slide1 #tv{
-	position: absolute;
-	transform: rotate(2deg);
-	width: 10vh;
-	left: 25vw;
-	top: 35.9vh;
 }
 
-#nuage1{
-	animation: nuage1 36s linear infinite alternate;
-	width: 22vh;
-}
-#nuage2{
-	animation: nuage2 27s linear infinite alternate;
-	width: 20vh;
-}
-#nuage3{
-	animation: nuage3 33s ease-out infinite alternate;
-	width: 20vh;
-}
-#nuage4{
-	animation: nuage4 30s ease-out infinite alternate;
-	width: 22vh;
->>>>>>> master
-}
 #nuage1, #nuage3{
 	position: absolute;
 	margin-top: 6vh;
@@ -367,13 +311,6 @@ ol.numericControls {
 	left: 5vw;
 	top: 45vh;
 	width: 40%;
-<<<<<<< HEAD
-=======
-}
-#slide1 .randombutton{
-	margin-left: 50%;
-	width: 50%;
->>>>>>> master
 }
 #slide1 .prevbutton{
 	width: 33.33%;
@@ -383,13 +320,8 @@ ol.numericControls {
 	width: 33.33%;
 }
 #slide1 .nextbutton{
-<<<<<<< HEAD
 	width: 33.33%;
 	float: right;
-=======
-		width: 33.33%;
-    float: right;
->>>>>>> master
 }
 #slide1>.flavortext {
 	position: absolute;
@@ -397,17 +329,10 @@ ol.numericControls {
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1.5em;
-<<<<<<< HEAD
 	text-align: justify;
 	width: 45%;
 	margin-left: 45vw;
 	margin-top: 25vh;
-=======
-    text-align: justify;
-    width: 45%;
-    margin-left: 45vw;
-    margin-top: 25vh;
->>>>>>> master
 }
 
 .btn-underline-contain {
@@ -542,7 +467,6 @@ ol.numericControls {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
 	overflow: hidden;
 	color: #267D7B;
 }
@@ -568,7 +492,6 @@ ol.numericControls {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	-o-transition: all 0.3s ease;
-	-ms-transition: all 0.3s ease;
 	left: 185px; /* May need to change this depending on length of button */
 }
 .btn-shiny:active{
@@ -701,33 +624,6 @@ ol.numericControls {
 	background: #040307;
 }
 #slide4 .intitule {
-<<<<<<< HEAD
-	font-family: 'Amethyst', fantasy;
-	font-size: 3em;
-	margin-top: 2vh;
-	color: white;
-}
-#slide4 .player{
-	top: 4vh;
-	bottom: 0;
-	width: 100vw;
-	margin-bottom: 2vh;
-	z-index: 3;
-}
-#slide4 .button{
-	padding-top: 4%;
-	position:absolute;
-	width: 50%;
-	left : 50vw;
-	transform :translate(-50%);
-	top : 35vh;
-}
-#slide4 .playbutton{
-	margin-top: 1vh;
-}
-#slide4 .prevbutton{
-	margin-top: 6vh;
-=======
     font-family: 'Amethyst', fantasy;
     font-size: 3em;
     margin-top: 2vh;
@@ -757,28 +653,13 @@ ol.numericControls {
 	width: 15vw;
 }
 #slide4 .prevbutton{
-	margin-top: 4vh; 
->>>>>>> master
+	margin-top: 4vh;
 }
 
 #slide4 .nextbutton{
 	margin-top: 1vh;
 }
 #slide4>.flavortext {
-<<<<<<< HEAD
-	font-family: 'Coves', sans-serif;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 1.5em;
-	text-align: justify;
-	width: 80%;
-	margin-top: 7vh;
-	color: white;
-	display: inline-block;
-	columns: 2 250px;
-	column-gap: 25vw;
-
-=======
 	position: absolute;
     font-family: 'Coves', sans-serif;
     font-weight: normal;
@@ -791,8 +672,6 @@ ol.numericControls {
     color: white;
     columns: 2 250px;
     column-gap: 25vw;
-   
->>>>>>> master
 }
 
 #slide4>.lecteur>.player>.waveform {
@@ -900,7 +779,16 @@ ol.numericControls {
 	55% {width: 100%; right: 0;}
 	100% {width: 0; right: 100%;}
 }
-<<<<<<< HEAD
+
+#particles-js {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
 
 /* responsive */
 @media screen and (max-width: 1200px) {
@@ -981,14 +869,3 @@ ol.numericControls {
 @media screen and (max-width: 768px) {
 
 }
-=======
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
->>>>>>> master
