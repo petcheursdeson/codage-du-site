@@ -504,12 +504,12 @@ ol.numericControls {
 	background: #b1b695;
 }
 @keyframes plane {
-	from {left: 10vw; } to {left: 90vw;}
+	from {left: -10vw; } to {left: 110vw;}
 }
 #plane{
 	animation: plane 45s linear infinite alternate;
 	width: 10vw;
-	margin-top: 5vh;
+	margin-top: -20vh;
 	position: absolute;
 	z-index: 2;
 }
