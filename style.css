@@ -422,7 +422,7 @@ ol.numericControls {
 	float: right;
 }
 
-#slide2>.flavortext{
+#slide2 .flavortext{
     font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
@@ -865,6 +865,88 @@ ol.numericControls {
         top: 50vh;
         height: 20vh;
     }
+	/*slide2*/
+	#slide2 .flavortext {
+		margin-top: 15vh;
+		font-size: 3rem;
+		margin-left: 10.5vw;
+		width: 80vw;
+		background-position: center;
+	}
+
+	#slide2 .intitule {
+		font-size: 6rem;
+	}
+
+	#slide2 .button {
+		margin-top: 40vh;
+		margin-left: 8vw;
+		width: 70%;
+		left: 0;
+	}
+
+	#slide2 .playbutton {
+		height: 5vh;
+	}
+
+	#slide2 .prevbutton {
+		height: 5vh;
+	}
+
+	#slide2 .nextbutton {
+		height: 5vh;
+	}
+
+	#slide2 .player {
+		top: 50vh;
+		height: 20vh;
+		width: auto;
+	}
+
+	#slide2 .btn-shiny {
+		font-size: 2rem;
+		width: 23vw;
+	}
+
+	/*slide4*/
+	#slide4 .flavortext {
+		margin-top: 50vh;
+		font-size: 3rem;
+		columns: 1;
+	}
+
+	#slide4 .intitule {
+		font-size: 5rem;
+	}
+
+	#slide4 .button {
+		width: auto;
+	}
+
+	#slide4 .playbutton {
+		height: 5vh;
+		width: 35vw;
+	}
+
+	#slide4 .prevbutton {
+		height: 5vh;
+		width: 35vw;
+	}
+
+	#slide4 .nextbutton {
+		height: 5vh;
+		width: 35vw;
+	}
+
+	#slide4 .player {
+	}
+
+	#slide4 .btn-outline {
+		font-size: 3rem;
+	}
+	#slide4 .btn-outline-contain {
+		max-width: none;
+	}
 }
 @media screen and (max-width: 768px) {
 
