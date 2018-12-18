@@ -11,5 +11,6 @@
     <orderEntry type="library" name="api" level="application" />
     <orderEntry type="library" name="jquery-migrate-1.4.1" level="application" />
     <orderEntry type="library" name="jquery-3.3.1" level="application" />
+    <orderEntry type="library" name="particles" level="application" />
   </component>
 </module>
