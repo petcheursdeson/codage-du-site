@@ -106,7 +106,7 @@ footer{
 #titre{
 	font-family: 'Coves', sans-serif;
 	font-weight: bold;
-	font-style: normal;
+    font-style: normal;
 	position: sticky;
 	top: 50vh;
 	font-size: 3rem;
@@ -122,13 +122,37 @@ footer{
 	height: 0;
 	transition: ease-out 1s;
 }
-.slide {
-	height: 86vh;
-}
 
 /* boutons avec numeros de diapos */
 ol.numericControls {
-	display: none;
+	margin:250px 0 1em 0;
+	padding:0;
+	height:28px;	
+}
+ol.numericControls li{
+	margin:0 10px 0 0; 
+	padding:0;
+	float:left;
+	list-style:none;
+	height:28px;
+	line-height:28px;
+}
+ol.numericControls li a{
+	float:left;
+	height:28px;
+	line-height:28px;
+	border:1px solid #ccc;
+	background:#DAF3F8;
+	color:#555;
+	padding:0 10px;
+	text-decoration:none;
+}
+ol.numericControls li.current a{
+	background:#5DC9E1;
+	color:#fff;
+}
+ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
+	outline:none;
 }
 
 /* boutons suivant et précédent */
@@ -160,6 +184,22 @@ ol.numericControls {
 .nextBtn{
 	right: 1vw;
 	background: url(images/next.svg) no-repeat 0 0;
+}
+
+.slide {
+	height: 86vh;
+}
+#slide1 {
+	background: #efd1d5;
+}
+#slide2 {
+	background: #292F3C;
+}
+#slide3 {
+	background: #b1b695;
+}
+#slide4 {
+	background: #040307;
 }
 #logo {
 	height: 5vh;
@@ -225,9 +265,7 @@ ol.numericControls {
 }
 
 /* slide numéro 1*/
-#slide1 {
-	background: #efd1d5;
-}
+
 @keyframes nuage1 {
 	from {left: 10vw;} to {left: 55vw;}
 }
@@ -240,12 +278,7 @@ ol.numericControls {
 @keyframes nuage3 {
 	from {left: 90vw;} to {left: 35vw;}
 }
-@keyframes nuage6 {
-	from {left: 80vw;} to {left: 25vw;}
-}
-@keyframes nuage7 {
-	from {left: 35;} to {left: 90vw;}
-}
+
 #slide1 .intitule {
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 3em;
@@ -280,15 +313,17 @@ ol.numericControls {
 
 #slide1 .player{
 	top: 60vh;
-	bottom: 0;
-	width: 100vw;
-	z-index: 3;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
 }
 #slide1 .button{
-	position:absolute;
-	left: 5vw;
-	top: 45vh;
-	width: 40%;
+    position:absolute;
+    left: 5vw;
+    top: 45vh;
+	bottom: 0;
+	width: 40vw;
+	z-index: 3;
 }
 #slide1 .randombutton{
 	margin-left: 50%;
@@ -296,11 +331,10 @@ ol.numericControls {
 }
 #slide1 .prevbutton{
 	width: 33.33%;
-	float: left;
+    float: left;
 }
 #slide1 .playbutton{
 	width: 33.33%;
-	float: center;
 }
 #slide1 .nextbutton{
 	width: 33.33%;
@@ -308,7 +342,7 @@ ol.numericControls {
 }
 #slide1>.flavortext {
 	position: absolute;
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1.5em;
@@ -322,7 +356,7 @@ ol.numericControls {
 	max-width: 270px;
 }
 .btn-underline {
-	font-family: 'Shadows Into Light', cursive;
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -364,9 +398,6 @@ ol.numericControls {
 }
 
 /* slide numéro 2*/
-#slide2 {
-	background: #292F3C;
-}
 @keyframes neon {
 	from {
 		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
@@ -406,7 +437,7 @@ ol.numericControls {
 }
 
 #slide2>.flavortext{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -433,7 +464,7 @@ ol.numericControls {
 	max-width: 270px;
 }
 .btn-shiny {
-	font-family: 'Neon Absolute Sans', sans-serif;
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
 	text-transform: uppercase;
@@ -482,7 +513,6 @@ ol.numericControls {
 .btn-shiny:active{
 	background: #01FDF6;
 }
-
 
 /*slide 3 */
 #slide3 {
@@ -542,7 +572,7 @@ ol.numericControls {
 	transform: scaleX(-1);
 }
 #slide3>.flavortext{
-	font-family: 'Coves';
+	font-family: 'Coves', sans-serif ;
 	font-weight: normal;
 	font-style: normal;
 	font-size : 1.5em;
@@ -586,7 +616,7 @@ ol.numericControls {
 	border: 3px solid white;
 }
 .btn-diagonal-inner {
-	font-family: 'Urban Jungle', fantasy;
+	font-family: 'Coves', sans-serif;
 	font-weight:bold;
 	text-align: center;
 	color: white;
@@ -605,9 +635,6 @@ ol.numericControls {
 }
 
 /*slide4*/
-#slide4 {
-	background: #040307;
-}
 #slide4 .intitule {
 	font-family: 'Amethyst', fantasy;
 	font-size: 3em;
@@ -667,7 +694,7 @@ ol.numericControls {
 	max-width: 270px;
 }
 .btn-outline {
-	font-family: 'Coves', sans-serif;
+	font-family:sans-serif;
 	font-weight:bold;
 	text-align: center;
 	color: white;
