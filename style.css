@@ -556,7 +556,7 @@ ol.numericControls {
 	float: right;
 	transform: scaleX(-1);
 }
-#slide3>.flavortext{
+#slide3 .flavortext{
     font-family: 'Coves', sans-serif;
 	font-weight: normal;
 	font-style: normal;
@@ -659,7 +659,7 @@ ol.numericControls {
 #slide4 .nextbutton{
 	margin-top: 1vh;
 }
-#slide4>.flavortext {
+#slide4 .flavortext {
 	position: absolute;
     font-family: 'Coves', sans-serif;
     font-weight: normal;
