@@ -322,7 +322,7 @@ ol.numericControls li a:focus, .prevBtn a:focus, .nextBtn a:focus{
     left: 5vw;
     top: 45vh;
 	bottom: 0;
-	width: 40vw;
+	width: 100vw;
 	z-index: 3;
 }
 #slide1 .randombutton{

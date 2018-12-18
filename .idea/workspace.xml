@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81c1e8a3-56d8-4c53-a991-4b632179aee3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/nuage.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/plane.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codage-du-site.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codage-du-site.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Petcheurs de sons.html" beforeDir="false" afterPath="$PROJECT_DIR$/Petcheurs de sons.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/Petcheurs de sons.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-118">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -36,8 +42,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="324" column="13" selection-start-line="324" selection-start-column="13" selection-end-line="324" selection-end-column="13" />
+            <state relative-caret-position="477">
+              <caret line="224" column="43" selection-start-line="224" selection-start-column="43" selection-end-line="224" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -66,8 +72,8 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="1057" />
   </component>
@@ -133,13 +139,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30156000" />
+    <option name="totallyTimeSpent" value="30086000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="854" height="1057" extended-state="0" />
+    <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17524509" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.086248495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -166,7 +172,7 @@
     <entry file="file://$PROJECT_DIR$/Petcheurs de sons.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-118">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -179,8 +185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="324" column="13" selection-start-line="324" selection-start-column="13" selection-end-line="324" selection-end-column="13" />
+        <state relative-caret-position="477">
+          <caret line="224" column="43" selection-start-line="224" selection-start-column="43" selection-end-line="224" selection-end-column="43" />
         </state>
       </provider>
     </entry>
