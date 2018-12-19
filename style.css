@@ -406,6 +406,7 @@ ol.numericControls {
 /* slide numéro 2*/
 #slide2 {
 	background: #292F3C;
+	z-index: 2;
 }
 @keyframes neon {
 	from {
@@ -466,7 +467,7 @@ ol.numericControls {
 	height: 100vh;
 	padding-top: 20vh;
 	position :absolute;
-	z-index:1;
+	z-index:3;
 }
 
 .btn-shiny-contain {
@@ -538,7 +539,7 @@ ol.numericControls {
 	width: 10vw;
 	margin-top: -15vh;
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 }
 #slide3 .intitule {
     font-family: "Urban Jungle", fantasy;
@@ -546,16 +547,21 @@ ol.numericControls {
 	margin-top: 2vh;
 }
 #slide3 .player{
-	top: 55vh; bottom: 0;
-	width: 54%;
+	position: absolute;
+	top: 53vh; bottom: 0;
+	width: 50%;
+	margin-left: 25vw;
 	z-index: 3;
 }
 #slide3 .button{
-	position:absolute;
-	margin-top: 42vh;
-	margin-left: 25vw;
-	width: 50%;
-	z-index: 3;
+	padding-top: 4%;
+    position:absolute;
+    width: 50%;
+    left : 22vw;
+    top : 35vh;
+    z-index: 3;
+
+
 }
 #slide3 .prevbutton{
 	float: left;
@@ -577,11 +583,13 @@ ol.numericControls {
 #towerLeft{
 	width : 25%;
 	float: left;
+	margin-left: 2vw;
 }
 #towerRight{
 	width: 25%;
 	float: right;
 	transform: scaleX(-1);
+	margin-right: 2vw;
 }
 #slide3 .flavortext{
     font-family: 'Coves', sans-serif;
@@ -589,9 +597,9 @@ ol.numericControls {
 	font-style: normal;
 	font-size : 1.5em;
 	text-align: justify;
-	width: 50%;
+	width: 48%;
 	position: absolute;
-	margin-left: 25vw;
+	margin-left: 27vw;
 	margin-top: 27vh;
 }
 /* boutons */
@@ -609,7 +617,7 @@ ol.numericControls {
 	outline: none;
 	cursor: pointer;
 	max-width: 270px;
-	min-height: 50px;
+	min-height: 25px;
 	background: transparent;
 	border: 3px solid rgba(255,255,255,0.5);
 	-webkit-transform: skew(-25deg);
@@ -621,6 +629,21 @@ ol.numericControls {
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 }
+.btn-diagonal span {
+	font-family: 'Urban Jungle', fantasy;
+	font-weight:bold;
+	text-align: center;
+	font-size: 1.8em;
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+	text-decoration: none;
+	transform: skew(25deg);
+	color: rgba(255,255,255,0.5);
+
+}
+
+
 .btn-diagonal-contain:hover .btn-diagonal {
 	-webkit-transform: skew(0deg);
 	-moz-transform: skew(0deg);
@@ -633,7 +656,7 @@ ol.numericControls {
 	font-family: 'Urban Jungle', fantasy;
 	font-weight:bold;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -652,6 +675,8 @@ ol.numericControls {
 /*slide4*/
 #slide4 {
 	background: #040307;
+	    z-index: 2;
+
 }
 #slide4 .intitule {
     font-family: 'Amethyst', fantasy;
@@ -662,6 +687,8 @@ ol.numericControls {
 	position: absolute;
 	left : 50vw;
     transform :translate(-50%);
+    z-index: 3;
+
 }
 #slide4 .player{
     top: 18vh;
