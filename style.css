@@ -122,7 +122,7 @@ a, #logo{
 	position:absolute;
 }
 a{
-	padding-top: 3vh;
+	padding-top: 6vh;
 }
 #apropos{
 	left: 10vw;
@@ -410,20 +410,21 @@ ol.numericControls {
 }
 @keyframes neon {
 	from {
-		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 150px #01fdf6;
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #01fdf6, 0 0 70px #01fdf6, 0 0 80px #01fdf6, 0 0 100px #01fdf6, 0 0 120px #01fdf6,0 0 170px #01fdf6;
 	}
 	to {
-		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01fdf6, 0 0 35px #01fdf6, 0 0 40px #01fdf6, 0 0 50px #01fdf6, 0 0 75px #01fdf6;
+		text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #01fdf6, 0 0 35px #01fdf6, 0 0 40px #01fdf6, 0 0 50px #01fdf6, 0 0 60px #01fdf6,0 0 850px #01fdf6;
 	}
 }
 
 #slide2 .intitule {
-    font-family: 'Neon Absolute Sans', sans-serif;
+	font-family: 'Neon Absolute Sans', sans-serif;
 	animation: neon 1.5s ease-in-out infinite alternate;
 	color: #ffffff;
-	font-size: 3em;
-	margin-top: 2vh;
+	font-size: 5em;
+	margin-top: 10vh;
 }
+
 #slide2 .player{
 	top: 35vh;
 	bottom: 0;
@@ -560,8 +561,6 @@ ol.numericControls {
     left : 22vw;
     top : 35vh;
     z-index: 3;
-
-
 }
 #slide3 .prevbutton{
 	float: left;
@@ -607,43 +606,30 @@ ol.numericControls {
 	width: 20%;
 	display: inline-block;
 }
-
+.btn-contain {
+	margin: 5% auto;
+	min-height: 100px;
+}
 .btn-diagonal-contain {
 	max-width: 160px;
 	text-decoration:none;
-
 }
 .btn-diagonal {
 	outline: none;
 	cursor: pointer;
 	max-width: 270px;
-	min-height: 25px;
+	min-height: 50px;
 	background: transparent;
 	border: 3px solid rgba(255,255,255,0.5);
 	-webkit-transform: skew(-25deg);
 	transform: skew(-25deg);
 	margin: 10px auto;
-	padding : 10px;
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
-}
-.btn-diagonal span {
-	font-family: 'Urban Jungle', fantasy;
-	font-weight:bold;
-	text-align: center;
-	font-size: 1.8em;
-	color: white;
-	text-transform: uppercase;
-	position: relative;
-	text-decoration: none;
-	transform: skew(25deg);
-	color: rgba(255,255,255,0.5);
 
 }
-
-
 .btn-diagonal-contain:hover .btn-diagonal {
 	-webkit-transform: skew(0deg);
 	-moz-transform: skew(0deg);
@@ -656,17 +642,19 @@ ol.numericControls {
 	font-family: 'Urban Jungle', fantasy;
 	font-weight:bold;
 	text-align: center;
-	font-size: 1.8em;
+	font-size: 1em;
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
 	position: relative;
-	top: 4.6vh;
+	top: 45px;
 	color: rgba(255,255,255,0.5);
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
+	margin-left: 1vw;
+	margin-right: 1vw;
 }
 .btn-diagonal-contain:hover  .btn-diagonal-inner {
 	color: rgba(255,255,255,1);
@@ -985,6 +973,7 @@ ol.numericControls {
 	}
 
 	#slide3 .button {
+		left : 17vw;
 	}
 
 	#slide3 .playbutton {
@@ -1003,7 +992,7 @@ ol.numericControls {
 	}
 
 	#slide3 .player {
-		top: 28vh;
+		top: -15vh;
 	}
 
 	#slide3 .btn-diagonal {
