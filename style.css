@@ -148,8 +148,30 @@ footer, header {
 .slide {
 	height: 86vh;
 }
-.slide {
-	height: 86vh;
+.goTo{
+    font-family: 'Coves', sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	position: sticky;
+	top: 50vh;
+	font-size: 2rem;
+	z-index: 6;
+	cursor: pointer;
+	color: white;
+	display:inline-block;
+	visibility: hidden;
+	transition: visibility 2s ease-out 1.1s;
+	margin-right: 5vw;
+	margin-left: 5vw;
+}
+#goTo1 {
+	font-family: "Shadows Into Light", cursive;
+}
+#goTo2 {
+	font-family: 'Neon Absolute Sans', sans-serif;
+}
+#goTo3 {
+	font-family: "Urban Jungle", fantasy;
 }
 
 /* boutons avec numeros de diapos */
@@ -194,7 +216,6 @@ ol.numericControls {
 	position :absolute;
 	visibility: hidden;
 	transition: visibility 2s ease-out 1.1s;
-
 }
 
 /* player */
@@ -804,6 +825,12 @@ ol.numericControls {
     .info {
         font-size: 4rem;
     }
+	
+	.goTo {
+		margin-top: 2vh;
+		margin-right: 2.5vw;
+		margin-left: 2.5vw;
+	}
 
     /*slide1*/
     #slide1 .flavortext {

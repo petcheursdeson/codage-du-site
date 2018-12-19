@@ -4,18 +4,30 @@ $().ready(function(){
         $("#diaporama").css("height","86vh");
         $("header").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
         $("footer").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
-        $("#logo").css("visibility","visible");
+        $("#logo, .goTo").css("visibility","visible");
     });
 
     let sudoSlider = $("#contenu").sudoSlider({
         numeric: true
     });
-
+	
     let player;
-
-    $(".nextBtn, .prevBtn, #titre").click(function(){
+	
+    $(".nextBtn, .prevBtn, #titre, .goTo").click(function (){
+		$("#goTo1").click(function(){
+			sudoSlider.goToSlide(1);
+		});
+		$("#goTo2").click(function(){
+			sudoSlider.goToSlide(2);
+		});
+		$("#goTo3").click(function(){
+			sudoSlider.goToSlide(3);
+		});
+		$("#goTo4").click(function(){
+			sudoSlider.goToSlide(4);
+		});
         sudoSlider.runWhenNotAnimating(function () {
-            let currentSlide = sudoSlider.getValue('currentSlide');
+			let currentSlide = sudoSlider.getValue('currentSlide');	
             let slidePlayer = "#slide" + currentSlide + " .lecteur";
             let currentIframe = 'iframe#list' + currentSlide;
 			$(".player, iframe").remove();
@@ -32,12 +44,14 @@ $().ready(function(){
                             $('.waveform').css('filter', "sepia(1) hue-rotate(290deg) saturate(1000%) brightness(94%)");
                         }
                     });
+					$(".prevBtn, .nextBtn").css("filter", "invert(0)");
                     setupPlayer();
                     break;
                 case 2:
                     $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list2" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/663872259&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
                     player = SC.Widget($(currentIframe)[0]);
                     setupPlayer();
+					$(".prevBtn, .nextBtn").css("filter", "invert(0)");
                     break;
                 case 3:
                     $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list3" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/663866475&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
@@ -52,11 +66,13 @@ $().ready(function(){
                         }
                     });
                     setupPlayer();
+					$(".prevBtn, .nextBtn").css("filter", "invert(0)");
                     break;
                 default:
                     $(slidePlayer).append('<div class="player"><span class="info"></span><div class="waveform"></div><div class="position"></div></div><iframe id="list4" class="sc-widget" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/665388102&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>');
                     player = SC.Widget($(currentIframe)[0]);
                     setupPlayer();
+					$(".prevBtn, .nextBtn").css("filter", "invert(1)");
             }
             player.pause();
         });
