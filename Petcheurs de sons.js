@@ -13,19 +13,20 @@ $().ready(function(){
 	
     let player;
 	
+	$("#goTo1").click(function(){
+		$(".numericControls li:first-child").click();
+	});
+	$("#goTo2").click(function(){
+		$(".numericControls li:nth-child(2)").click();
+	});
+	$("#goTo3").click(function(){
+		$(".numericControls li:nth-child(3)").click();
+	});
+	$("#goTo4").click(function(){
+		$(".numericControls li:last-child").click();
+	});
+	
     $(".nextBtn, .prevBtn, #titre, .goTo").click(function (){
-		$("#goTo1").click(function(){
-			sudoSlider.goToSlide(1);
-		});
-		$("#goTo2").click(function(){
-			sudoSlider.goToSlide(2);
-		});
-		$("#goTo3").click(function(){
-			sudoSlider.goToSlide(3);
-		});
-		$("#goTo4").click(function(){
-			sudoSlider.goToSlide(4);
-		});
         sudoSlider.runWhenNotAnimating(function () {
 			let currentSlide = sudoSlider.getValue('currentSlide');	
             let slidePlayer = "#slide" + currentSlide + " .lecteur";
