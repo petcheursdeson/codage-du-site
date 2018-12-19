@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e4d498a-8316-46be-a383-b2905122b9a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Petcheurs de sons.html" beforeDir="false" afterPath="$PROJECT_DIR$/Petcheurs de sons.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Petcheurs de sons.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="132" column="68" selection-start-line="132" selection-start-column="68" selection-end-line="132" selection-end-column="68" />
+            <state relative-caret-position="531">
+              <caret line="196" column="611" selection-start-line="196" selection-start-column="611" selection-end-line="196" selection-end-column="611" />
             </state>
           </provider>
         </entry>
@@ -38,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2902">
-              <caret line="426" lean-forward="true" selection-start-line="426" selection-end-line="426" />
+            <state relative-caret-position="446">
+              <caret line="1014" column="22" selection-start-line="1014" selection-start-column="22" selection-end-line="1014" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -103,12 +102,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1545249367808</updated>
-      <workItem from="1545249371788" duration="3419000" />
+      <workItem from="1545249371788" duration="3777000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1273000" />
+    <option name="totallyTimeSpent" value="1631000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1066" extended-state="6" />
@@ -143,15 +142,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Petcheurs de sons.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="132" column="68" selection-start-line="132" selection-start-column="68" selection-end-line="132" selection-end-column="68" />
+        <state relative-caret-position="531">
+          <caret line="196" column="611" selection-start-line="196" selection-start-column="611" selection-end-line="196" selection-end-column="611" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2902">
-          <caret line="426" lean-forward="true" selection-start-line="426" selection-end-line="426" />
+        <state relative-caret-position="446">
+          <caret line="1014" column="22" selection-start-line="1014" selection-start-column="22" selection-end-line="1014" selection-end-column="22" />
         </state>
       </provider>
     </entry>
