@@ -87,8 +87,7 @@ iframe { display: none; }
 
 @keyframes oneFX {
     to {
-
-    	background-position: -100vw -100vh;
+    	background-position: -100vw;
     }
 }
 header, footer {
@@ -501,7 +500,7 @@ ol.numericControls {
 #plane{
 	animation: plane 45s linear infinite;
 	width: 10vw;
-	margin-top: -20vh;
+	margin-top: -15vh;
 	position: absolute;
 	z-index: 2;
 }
@@ -568,6 +567,7 @@ ol.numericControls {
 .btn-diagonal-contain {
 	max-width: 160px;
 	text-decoration:none;
+
 }
 .btn-diagonal {
 	outline: none;
@@ -579,6 +579,7 @@ ol.numericControls {
 	-webkit-transform: skew(-25deg);
 	transform: skew(-25deg);
 	margin: 10px auto;
+	padding : 10px;
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
@@ -596,6 +597,7 @@ ol.numericControls {
 	font-family: 'Urban Jungle', fantasy;
 	font-weight:bold;
 	text-align: center;
+	font-size: 2em;
 	color: white;
 	text-transform: uppercase;
 	text-decoration: none;
