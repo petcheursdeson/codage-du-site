@@ -842,7 +842,14 @@ ol.numericControls {
 		width: 10vw;
 	}
 }
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px)  {
+
+#slide3 .btn-diagonal-inner {
+		top: 2vh;
+		font-size: 1.8rem;
+	}
+}
+@media screen and (max-width: 992px)  {
     #titre {
         font-size: 5rem;
     }
@@ -1000,8 +1007,8 @@ ol.numericControls {
 	}
 
 	#slide3 .btn-diagonal-inner {
-		top: 2vh;
-		font-size: 1.8rem;
+		top: 1vh;
+		font-size: 1.4rem;
 	}
 
 	#plane {
@@ -1049,6 +1056,6 @@ ol.numericControls {
 		max-width: none;
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
 
 }
