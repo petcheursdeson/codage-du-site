@@ -1,10 +1,10 @@
 $().ready(function(){
-
     $("#titre").click(function(){
         $("#diaporama").css("height","86vh");
-        $("header").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
-        $("footer").css({"height":"7vh","background-image":"none","animation-fill-mode":"none","background" : "#040307"});
+        $("header").css({"height":"7vh","background": "rgba(0,0,0,1)","animation":"none"});
+        $("footer").css({"height":"7vh","background": "rgba(0,0,0,1)","animation":"none"});
         $("#logo").css("visibility","visible");
+        $("a").css("visibility","visible");
     });
 
     let sudoSlider = $("#contenu").sudoSlider({
@@ -165,7 +165,7 @@ $().ready(function(){
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 180,
+      "value": 150,
       "density": {
         "enable": true,
         "value_area": 650
@@ -211,16 +211,16 @@ particlesJS("particles-js", {
     },
     "line_linked": {
       "enable": true,
-      "distance": 50,
+      "distance": 40,
       "color": "#ffffff",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 5,
       "direction": "none",
-      "random": false,
+      "random": true,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
@@ -238,10 +238,6 @@ particlesJS("particles-js", {
         "enable": true,
         "mode": "grab"
       },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
       "resize": true
     },
     "modes": {
@@ -250,23 +246,6 @@ particlesJS("particles-js", {
         "line_linked": {
           "opacity": 1
         }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
       }
     }
   },
