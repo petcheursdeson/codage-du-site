@@ -163,6 +163,7 @@ footer, header {
 	transition: visibility 2s ease-out 1.1s;
 	margin-right: 5vw;
 	margin-left: 5vw;
+	margin-top: 1vh;
 }
 #goTo1 {
 	font-family: "Shadows Into Light", cursive;
