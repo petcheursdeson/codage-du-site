@@ -99,40 +99,6 @@ $().ready(function(){
             scrub = (e.pageX-pOffset.left);
         });
 
-        $(".playbutton").click(function(){
-            player.isPaused(function(pause){
-                if (pause) {
-                    player.play();
-                } else {
-                    player.pause();
-                }
-            });
-        });
-        $(".nextbutton").click(function(){
-            player.next();
-            player.isPaused(function(pause) {
-                if (pause) {
-                    player.pause();
-                } else {
-                    player.play();
-                }
-            });
-            setInfo();
-            player.seekTo(0);
-        });
-        $(".prevbutton").click(function(){
-            player.prev();
-            player.isPaused(function(pause) {
-                if (pause) {
-                    player.pause();
-                } else {
-                    player.play();
-                }
-            });
-            setInfo();
-            player.seekTo(0);
-        });
-
         $(cssPlayer).click(function(){ //Use the position to seek when clicked
             $('.position').css('width',scrub+"px");
             var seek = player.duration*(scrub/pWidth);
@@ -148,6 +114,40 @@ $().ready(function(){
 
         });
     }
+
+    $(".playbutton").click(function(){
+        player.isPaused(function(pause){
+            if (pause) {
+                player.play();
+            } else {
+                player.pause();
+            }
+        });
+    });
+    $(".nextbutton").click(function(){
+        player.next();
+        player.isPaused(function(pause) {
+            if (pause) {
+                player.pause();
+            } else {
+                player.play();
+            }
+        });
+        setInfo();
+        player.seekTo(0);
+    });
+    $(".prevbutton").click(function(){
+        player.prev();
+        player.isPaused(function(pause) {
+            if (pause) {
+                player.pause();
+            } else {
+                player.play();
+            }
+        });
+        setInfo();
+        player.seekTo(0);
+    });
 
     function setInfo() {
         player.getCurrentSound(function(song) {
